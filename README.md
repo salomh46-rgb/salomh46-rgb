@@ -12,6 +12,10 @@
 
 <!-- SOCIAL & QUICK CONTACT BADGES -->
 <p align="center">
+  <a href="https://github.com/salomh46-rgb?tab=followers" target="_blank">
+    <img src="https://img.shields.io/github/followers/salomh46-rgb?label=Follow%20Me&style=for-the-badge&logo=github&color=24292e&logoColor=white" alt="Followers" />
+  </a>
+  &nbsp;
   <a href="https://bestportfoliyo-o4z2.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/🌐_PORTFOLIO-0070F3?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
@@ -54,12 +58,24 @@ const jasper = {
 
 ---
 
-### 🛠 Texnologiyalar & Stek (Tech Stack)
+### 🛠 Texnologiyalar & Stek (Tech Stack Matrix)
 
 <div align="center">
   <p>
     <img src="https://skillicons.dev/icons?i=python,js,ts,react,nextjs,tailwind,redux,nodejs,fastapi,django,postgres,mongodb,sqlite,redis,docker,linux,git,github,postman,vscode&perline=10&theme=dark" alt="Tech Stack" />
   </p>
+</div>
+
+---
+
+### 🐍 GitHub Faollik O'yini (Contribution Snake)
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/salomh46-rgb/salomh46-rgb/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/salomh46-rgb/salomh46-rgb/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/salomh46-rgb/salomh46-rgb/output/github-contribution-grid-snake-dark.svg" width="100%">
+  </picture>
 </div>
 
 ---
