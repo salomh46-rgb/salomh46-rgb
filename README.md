@@ -5,7 +5,7 @@
 
 <!-- TYPING ANIMATION -->
 <a href="https://github.com/salomh46-rgb">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;AI+Agent+%26+Telegram+Bot+Architect;Python+%7C+React+%7C+Node.js+%7C+Next.js;Building+Scalable+Cloud+%26+Database+Systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;AI+Agent+%26+Telegram+Bot+Architect;Python+%7C+React+%7C+Node.js+%7C+Next.js;Open-Source+Creator+%26+Fintech+Engineer;Building+Scalable+Cloud+%26+Database+Systems" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -80,7 +80,7 @@ const jasper = {
 
 ---
 
-### 🔥 Asosiy Loyihalar (Featured Projects)
+### 🔥 Asosiy Loyihalar (Featured Masterpieces)
 
 <table>
   <tr>
@@ -101,9 +101,41 @@ const jasper = {
       </p>
     </td>
     <td width="50%">
+      <h3 align="center">💳 UzPayment SDK</h3>
+      <p align="center">
+        <b>Universal Multi-Provider Payment Gateway SDK for Uzbekistan (Click, Payme, Uzum Bank, Paynet).</b><br/>
+        <i>FastAPI & Django plug-and-play adapterlari, avtomatik MD5/HMAC imzo tekshiruvi va checkout link generatori.</i>
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Python_SDK-3776AB?style=flat-square&logo=python&logoColor=white" />
+        <img src="https://img.shields.io/badge/FastAPI_&_Django-009688?style=flat-square&logo=fastapi&logoColor=white" />
+        <img src="https://img.shields.io/badge/Payme_&_Click-0088cc?style=flat-square&logo=contactlesspayment&logoColor=white" />
+      </p>
+      <p align="center">
+        👉 <a href="https://github.com/salomh46-rgb/uzpayment-sdk"><b>[Repozitoriya]</b></a>
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🤖 AI Code Reviewer Action</h3>
+      <p align="center">
+        <b>Automated AI-powered Pull Request Reviewer & Security Auditor using Google Gemini.</b><br/>
+        <i>OWASP xavfsizlik tekshiruvi, O(N^2) unumdorlik tahlili va to'g'ridan-to'g'ri PR izoh qoldirish tizimi.</i>
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/GitHub_Action-2088FF?style=flat-square&logo=githubactions&logoColor=white" />
+        <img src="https://img.shields.io/badge/Gemini_3.1-4285F4?style=flat-square&logo=google&logoColor=white" />
+        <img src="https://img.shields.io/badge/Security_Audit-FF6C37?style=flat-square&logo=securityscorecard&logoColor=white" />
+      </p>
+      <p align="center">
+        👉 <a href="https://github.com/salomh46-rgb/ai-code-reviewer-action"><b>[Repozitoriya]</b></a>
+      </p>
+    </td>
+    <td width="50%">
       <h3 align="center">📄 Rezyume AI Creator</h3>
       <p align="center">
-        <b>Sun'iy intellekt orqali zamonaviy, ATS-friendly rezyume va portfolio yaratuvchi avtomatlashgan platforma.</b>
+        <b>Sun'iy intellekt orqali zamonaviy, ATS-friendly rezyume va portfolio yaratuvchi platforma.</b>
       </p>
       <p align="center">
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
@@ -112,36 +144,6 @@ const jasper = {
       </p>
       <p align="center">
         👉 <a href="https://github.com/salomh46-rgb/rezyume-ai_creater"><b>[Repozitoriya]</b></a>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3 align="center">⚡️ Full-Stack API Explorer</h3>
-      <p align="center">
-        <b>Interaktiv API so'rovlarni boshqarish, tahlil qilish va yuk ostida testlash platformasi.</b>
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-        <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
-        <img src="https://img.shields.io/badge/REST_API-009688?style=flat-square&logo=fastapi&logoColor=white" />
-      </p>
-      <p align="center">
-        👉 <a href="https://github.com/salomh46-rgb/Full-Stack-API-Explorer"><b>[Repozitoriya]</b></a>
-      </p>
-    </td>
-    <td width="50%">
-      <h3 align="center">📊 Smart Task Manager Dashboard</h3>
-      <p align="center">
-        <b>Jamoalar va shaxsiy samaradorlik uchun real-time vazifalar va loyihalar boshqaruv paneli.</b>
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
-        <img src="https://img.shields.io/badge/Tailwind-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" />
-        <img src="https://img.shields.io/badge/Analytics-FF6C37?style=flat-square&logo=chartdotjs&logoColor=white" />
-      </p>
-      <p align="center">
-        👉 <a href="https://github.com/salomh46-rgb/Smart-Task-Manager-Dashboard"><b>[Repozitoriya]</b></a>
       </p>
     </td>
   </tr>
