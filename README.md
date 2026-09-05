@@ -5,7 +5,7 @@
 
 <!-- TYPING ANIMATION -->
 <a href="https://github.com/salomh46-rgb">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;AI+Agent+%26+Telegram+Bot+Architect;Python+%7C+React+%7C+Node.js+%7C+Next.js;Open-Source+Creator+%26+Fintech+Engineer;Building+Scalable+Cloud+%26+Database+Systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2500&pause=1000&color=38BDF8&center=true&vCenter=true&width=650&lines=Full-Stack+Web+Developer;AI+Agent+%26+Telegram+Bot+Architect;Python+%7C+React+%7C+Node.js+%7C+Next.js;Real-Time+WebSockets+%26+Fintech+SDKs;Building+Scalable+Cloud+%26+Database+Systems" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -45,8 +45,8 @@ const jasper = {
     portfolio   : "https://bestportfoliyo-o4z2.vercel.app/",
     code        : ["Python", "JavaScript (ES6+)", "TypeScript", "SQL"],
     technologies: {
-        frontend  : ["React.js", "Next.js", "Tailwind CSS", "Redux Toolkit"],
-        backend   : ["Node.js", "FastAPI", "Django", "Express"],
+        frontend  : ["React.js", "Next.js 14", "Tailwind CSS", "Redux Toolkit"],
+        backend   : ["Node.js", "FastAPI", "Django", "WebSockets (Socket.io)"],
         ai_nlp    : ["Google Gemini AI", "NLP & Audio Processing", "AI Agents"],
         database  : ["PostgreSQL", "SQLite (WAL Mode)", "MongoDB", "Redis"],
         devops    : ["Docker", "Docker Compose", "Ubuntu VPS", "Git & CI/CD"]
@@ -118,6 +118,21 @@ const jasper = {
   </tr>
   <tr>
     <td width="50%">
+      <h3 align="center">⚡️ CollabFlow AI Canvas</h3>
+      <p align="center">
+        <b>Real-Time Multiplayer Collaborative Whiteboard with Gemini AI Architecture Diagrammer.</b><br/>
+        <i>Sub-20ms multiplayer kursorlar, WebSockets sinhronizatsiya, infinite canvas va tabiiy tildan diagramma generatori.</i>
+      </p>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Next.js_14-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
+        <img src="https://img.shields.io/badge/WebSockets-010101?style=flat-square&logo=socketdotio&logoColor=white" />
+        <img src="https://img.shields.io/badge/Gemini_AI-4285F4?style=flat-square&logo=google&logoColor=white" />
+      </p>
+      <p align="center">
+        👉 <a href="https://github.com/salomh46-rgb/collabflow-ai-canvas"><b>[Repozitoriya]</b></a>
+      </p>
+    </td>
+    <td width="50%">
       <h3 align="center">🤖 AI Code Reviewer Action</h3>
       <p align="center">
         <b>Automated AI-powered Pull Request Reviewer & Security Auditor using Google Gemini.</b><br/>
@@ -130,20 +145,6 @@ const jasper = {
       </p>
       <p align="center">
         👉 <a href="https://github.com/salomh46-rgb/ai-code-reviewer-action"><b>[Repozitoriya]</b></a>
-      </p>
-    </td>
-    <td width="50%">
-      <h3 align="center">📄 Rezyume AI Creator</h3>
-      <p align="center">
-        <b>Sun'iy intellekt orqali zamonaviy, ATS-friendly rezyume va portfolio yaratuvchi platforma.</b>
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-        <img src="https://img.shields.io/badge/AI_Engine-8A2BE2?style=flat-square&logo=openai&logoColor=white" />
-      </p>
-      <p align="center">
-        👉 <a href="https://github.com/salomh46-rgb/rezyume-ai_creater"><b>[Repozitoriya]</b></a>
       </p>
     </td>
   </tr>
