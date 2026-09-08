@@ -1,0 +1,322 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="100%" height="260">
+  <defs>
+    <!-- Background Space Gradient -->
+    <radialGradient id="spaceBg" cx="30%" cy="40%" r="90%">
+      <stop offset="0%" stop-color="#0e1738"/>
+      <stop offset="45%" stop-color="#080d22"/>
+      <stop offset="85%" stop-color="#03050c"/>
+      <stop offset="100%" stop-color="#010206"/>
+    </radialGradient>
+
+    <!-- Cosmic Nebula Glow 1 -->
+    <radialGradient id="nebulaCyan" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#0051ff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cosmic Nebula Glow 2 -->
+    <radialGradient id="nebulaPurple" cx="80%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#bf00ff" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#ff007b" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Planet Spherical 3D Lighting Gradient -->
+    <radialGradient id="planetSphere" cx="30%" cy="28%" r="72%">
+      <stop offset="0%" stop-color="#6ee7b7"/>
+      <stop offset="25%" stop-color="#06b6d4"/>
+      <stop offset="55%" stop-color="#0284c7"/>
+      <stop offset="80%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+
+    <!-- Planet Atmosphere Corona Glow -->
+    <radialGradient id="planetCorona" cx="35%" cy="32%" r="75%">
+      <stop offset="60%" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="88%" stop-color="#00f0ff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.8"/>
+    </radialGradient>
+
+    <!-- Secondary Moon Spherical Gradient -->
+    <radialGradient id="moonGrad" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="40%" stop-color="#94a3b8"/>
+      <stop offset="80%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+
+    <!-- Planet Clip Path (Sphere Mask) -->
+    <clipPath id="planetClip">
+      <circle cx="720" cy="130" r="75"/>
+    </clipPath>
+
+    <!-- Ring Back/Front Clip -->
+    <clipPath id="ringFrontClip">
+      <rect x="600" y="125" width="240" height="120"/>
+    </clipPath>
+
+    <!-- Glow Filter -->
+    <filter id="glowFilter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes starTwinkle {
+      0% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.2); }
+      100% { opacity: 0.3; transform: scale(0.9); }
+    }
+    @keyframes rotateTerrain {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-300px); }
+    }
+    @keyframes pulseAura {
+      0%, 100% { opacity: 0.65; transform: scale(1); }
+      50% { opacity: 0.95; transform: scale(1.04); }
+    }
+    @keyframes orbitMoon {
+      0% { transform: rotate(0deg) translateX(125px) rotate(0deg); }
+      100% { transform: rotate(360deg) translateX(125px) rotate(-360deg); }
+    }
+    @keyframes meteorPass {
+      0% { transform: translate(-100px, -50px); opacity: 0; }
+      15% { opacity: 1; }
+      35% { transform: translate(650px, 320px); opacity: 0; }
+      100% { transform: translate(650px, 320px); opacity: 0; }
+    }
+    @keyframes ringGlowPulse {
+      0%, 100% { stroke-opacity: 0.7; }
+      50% { stroke-opacity: 1; }
+    }
+    .meteor {
+      animation: meteorPass 9s cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
+    }
+  </style>
+
+  <!-- Canvas Border & Deep Space -->
+  <rect width="900" height="260" rx="20" fill="url(#spaceBg)" stroke="#00f0ff" stroke-opacity="0.4" stroke-width="1.6"/>
+
+  <!-- Nebula Dust Clouds -->
+  <ellipse cx="200" cy="90" rx="350" ry="180" fill="url(#nebulaCyan)" filter="url(#glowFilter)"/>
+  <ellipse cx="730" cy="160" rx="320" ry="170" fill="url(#nebulaPurple)" filter="url(#glowFilter)"/>
+
+  <!-- Starfield -->
+  <g id="starfield">
+    <circle cx="669" cy="43" r="0.6" fill="#ffffff" opacity="0.48" style="animation: starTwinkle 3.3s ease-in-out 2.9s infinite alternate;"/>
+    <circle cx="707" cy="204" r="2.0" fill="#ffffff" opacity="0.36" style="animation: starTwinkle 4.0s ease-in-out 0.1s infinite alternate;"/>
+    <circle cx="238" cy="74" r="1.4" fill="#ffffff" opacity="0.32" style="animation: starTwinkle 3.2s ease-in-out 2.6s infinite alternate;"/>
+    <circle cx="573" cy="122" r="1.0" fill="#ffffff" opacity="0.68" style="animation: starTwinkle 5.3s ease-in-out 0.0s infinite alternate;"/>
+    <circle cx="840" cy="55" r="1.7" fill="#ffffff" opacity="0.52" style="animation: starTwinkle 3.0s ease-in-out 3.8s infinite alternate;"/>
+    <circle cx="359" cy="41" r="0.7" fill="#ffffff" opacity="0.36" style="animation: starTwinkle 5.5s ease-in-out 2.4s infinite alternate;"/>
+    <circle cx="841" cy="26" r="1.8" fill="#ffffff" opacity="0.65" style="animation: starTwinkle 5.9s ease-in-out 1.5s infinite alternate;"/>
+    <circle cx="580" cy="90" r="1.9" fill="#ffffff" opacity="0.7" style="animation: starTwinkle 5.5s ease-in-out 2.3s infinite alternate;"/>
+    <circle cx="736" cy="32" r="0.7" fill="#ffffff" opacity="0.45" style="animation: starTwinkle 3.5s ease-in-out 0.3s infinite alternate;"/>
+    <circle cx="253" cy="236" r="0.8" fill="#ffffff" opacity="0.48" style="animation: starTwinkle 4.7s ease-in-out 1.5s infinite alternate;"/>
+    <circle cx="394" cy="105" r="0.9" fill="#ffffff" opacity="0.47" style="animation: starTwinkle 5.8s ease-in-out 2.6s infinite alternate;"/>
+    <circle cx="638" cy="177" r="0.9" fill="#ffffff" opacity="0.77" style="animation: starTwinkle 3.1s ease-in-out 1.5s infinite alternate;"/>
+    <circle cx="670" cy="191" r="1.5" fill="#ffffff" opacity="0.74" style="animation: starTwinkle 5.4s ease-in-out 3.1s infinite alternate;"/>
+    <circle cx="249" cy="225" r="0.7" fill="#ffffff" opacity="0.51" style="animation: starTwinkle 3.4s ease-in-out 0.8s infinite alternate;"/>
+    <circle cx="595" cy="239" r="1.7" fill="#ffffff" opacity="0.44" style="animation: starTwinkle 4.2s ease-in-out 3.5s infinite alternate;"/>
+    <circle cx="673" cy="132" r="0.8" fill="#ffffff" opacity="0.39" style="animation: starTwinkle 5.1s ease-in-out 2.2s infinite alternate;"/>
+    <circle cx="779" cy="164" r="1.3" fill="#ffffff" opacity="0.68" style="animation: starTwinkle 3.8s ease-in-out 4.0s infinite alternate;"/>
+    <circle cx="156" cy="145" r="1.4" fill="#ffffff" opacity="0.79" style="animation: starTwinkle 5.5s ease-in-out 0.6s infinite alternate;"/>
+    <circle cx="178" cy="217" r="1.7" fill="#ffffff" opacity="0.69" style="animation: starTwinkle 3.8s ease-in-out 2.4s infinite alternate;"/>
+    <circle cx="494" cy="150" r="1.0" fill="#ffffff" opacity="0.66" style="animation: starTwinkle 5.8s ease-in-out 2.7s infinite alternate;"/>
+    <circle cx="132" cy="189" r="2.0" fill="#ffffff" opacity="0.79" style="animation: starTwinkle 5.2s ease-in-out 1.4s infinite alternate;"/>
+    <circle cx="315" cy="126" r="0.9" fill="#ffffff" opacity="0.3" style="animation: starTwinkle 5.0s ease-in-out 2.9s infinite alternate;"/>
+    <circle cx="527" cy="210" r="0.9" fill="#ffffff" opacity="0.89" style="animation: starTwinkle 5.5s ease-in-out 1.2s infinite alternate;"/>
+    <circle cx="669" cy="144" r="1.6" fill="#ffffff" opacity="0.4" style="animation: starTwinkle 5.2s ease-in-out 2.2s infinite alternate;"/>
+    <circle cx="812" cy="150" r="2.1" fill="#ffffff" opacity="0.69" style="animation: starTwinkle 4.2s ease-in-out 0.4s infinite alternate;"/>
+    <circle cx="386" cy="239" r="2.2" fill="#ffffff" opacity="0.82" style="animation: starTwinkle 3.3s ease-in-out 1.0s infinite alternate;"/>
+    <circle cx="595" cy="35" r="0.7" fill="#ffffff" opacity="0.62" style="animation: starTwinkle 2.7s ease-in-out 3.0s infinite alternate;"/>
+    <circle cx="799" cy="47" r="0.8" fill="#ffffff" opacity="0.61" style="animation: starTwinkle 4.4s ease-in-out 1.1s infinite alternate;"/>
+    <circle cx="636" cy="123" r="2.1" fill="#ffffff" opacity="0.9" style="animation: starTwinkle 5.1s ease-in-out 2.8s infinite alternate;"/>
+    <circle cx="745" cy="94" r="1.2" fill="#ffffff" opacity="0.74" style="animation: starTwinkle 3.8s ease-in-out 3.6s infinite alternate;"/>
+    <circle cx="477" cy="45" r="1.0" fill="#ffffff" opacity="0.34" style="animation: starTwinkle 2.6s ease-in-out 2.2s infinite alternate;"/>
+    <circle cx="617" cy="71" r="0.6" fill="#ffffff" opacity="0.76" style="animation: starTwinkle 2.7s ease-in-out 0.3s infinite alternate;"/>
+    <circle cx="47" cy="235" r="1.1" fill="#ffffff" opacity="0.63" style="animation: starTwinkle 3.5s ease-in-out 1.9s infinite alternate;"/>
+    <circle cx="567" cy="48" r="1.8" fill="#ffffff" opacity="0.87" style="animation: starTwinkle 4.5s ease-in-out 1.0s infinite alternate;"/>
+    <circle cx="499" cy="221" r="1.3" fill="#ffffff" opacity="0.36" style="animation: starTwinkle 4.8s ease-in-out 1.4s infinite alternate;"/>
+    <circle cx="435" cy="134" r="2.0" fill="#ffffff" opacity="0.34" style="animation: starTwinkle 4.8s ease-in-out 2.6s infinite alternate;"/>
+    <circle cx="77" cy="118" r="1.8" fill="#ffffff" opacity="0.82" style="animation: starTwinkle 2.9s ease-in-out 0.8s infinite alternate;"/>
+    <circle cx="564" cy="129" r="0.8" fill="#ffffff" opacity="0.42" style="animation: starTwinkle 4.1s ease-in-out 3.5s infinite alternate;"/>
+    <circle cx="92" cy="128" r="1.9" fill="#ffffff" opacity="0.86" style="animation: starTwinkle 2.8s ease-in-out 2.6s infinite alternate;"/>
+    <circle cx="568" cy="229" r="0.6" fill="#ffffff" opacity="0.36" style="animation: starTwinkle 5.1s ease-in-out 0.9s infinite alternate;"/>
+    <circle cx="431" cy="139" r="1.4" fill="#ffffff" opacity="0.86" style="animation: starTwinkle 5.7s ease-in-out 0.7s infinite alternate;"/>
+    <circle cx="17" cy="114" r="1.0" fill="#ffffff" opacity="0.81" style="animation: starTwinkle 4.1s ease-in-out 1.7s infinite alternate;"/>
+    <circle cx="763" cy="215" r="1.5" fill="#ffffff" opacity="0.77" style="animation: starTwinkle 3.0s ease-in-out 1.2s infinite alternate;"/>
+    <circle cx="74" cy="163" r="1.8" fill="#ffffff" opacity="0.34" style="animation: starTwinkle 3.6s ease-in-out 0.2s infinite alternate;"/>
+    <circle cx="503" cy="143" r="2.1" fill="#ffffff" opacity="0.65" style="animation: starTwinkle 2.7s ease-in-out 2.0s infinite alternate;"/>
+    <circle cx="205" cy="32" r="1.6" fill="#ffffff" opacity="0.74" style="animation: starTwinkle 3.3s ease-in-out 0.5s infinite alternate;"/>
+    <circle cx="598" cy="78" r="1.5" fill="#ffffff" opacity="0.33" style="animation: starTwinkle 2.8s ease-in-out 2.6s infinite alternate;"/>
+    <circle cx="593" cy="148" r="1.1" fill="#ffffff" opacity="0.47" style="animation: starTwinkle 4.8s ease-in-out 1.3s infinite alternate;"/>
+    <circle cx="286" cy="116" r="0.8" fill="#ffffff" opacity="0.72" style="animation: starTwinkle 4.1s ease-in-out 3.7s infinite alternate;"/>
+    <circle cx="89" cy="17" r="1.3" fill="#ffffff" opacity="0.95" style="animation: starTwinkle 6.0s ease-in-out 0.3s infinite alternate;"/>
+    <circle cx="233" cy="144" r="1.0" fill="#ffffff" opacity="0.91" style="animation: starTwinkle 5.6s ease-in-out 3.5s infinite alternate;"/>
+    <circle cx="393" cy="87" r="0.9" fill="#ffffff" opacity="0.84" style="animation: starTwinkle 5.0s ease-in-out 2.4s infinite alternate;"/>
+    <circle cx="841" cy="182" r="1.4" fill="#ffffff" opacity="0.73" style="animation: starTwinkle 4.4s ease-in-out 3.7s infinite alternate;"/>
+    <circle cx="121" cy="239" r="0.8" fill="#ffffff" opacity="0.38" style="animation: starTwinkle 2.9s ease-in-out 2.2s infinite alternate;"/>
+    <circle cx="293" cy="87" r="1.6" fill="#ffffff" opacity="0.77" style="animation: starTwinkle 3.2s ease-in-out 2.5s infinite alternate;"/>
+    <circle cx="285" cy="144" r="1.4" fill="#ffffff" opacity="0.89" style="animation: starTwinkle 5.5s ease-in-out 0.4s infinite alternate;"/>
+    <circle cx="448" cy="227" r="1.0" fill="#ffffff" opacity="0.3" style="animation: starTwinkle 5.2s ease-in-out 2.5s infinite alternate;"/>
+    <circle cx="283" cy="56" r="1.8" fill="#ffffff" opacity="0.66" style="animation: starTwinkle 4.0s ease-in-out 0.0s infinite alternate;"/>
+    <circle cx="92" cy="241" r="1.7" fill="#ffffff" opacity="0.4" style="animation: starTwinkle 2.6s ease-in-out 1.5s infinite alternate;"/>
+    <circle cx="580" cy="52" r="1.3" fill="#ffffff" opacity="0.33" style="animation: starTwinkle 3.8s ease-in-out 3.7s infinite alternate;"/>
+    <circle cx="55" cy="245" r="1.2" fill="#ffffff" opacity="0.74" style="animation: starTwinkle 4.8s ease-in-out 1.4s infinite alternate;"/>
+    <circle cx="588" cy="241" r="2.0" fill="#ffffff" opacity="0.93" style="animation: starTwinkle 5.1s ease-in-out 3.7s infinite alternate;"/>
+    <circle cx="257" cy="236" r="0.9" fill="#ffffff" opacity="0.82" style="animation: starTwinkle 3.1s ease-in-out 1.6s infinite alternate;"/>
+    <circle cx="198" cy="203" r="2.1" fill="#ffffff" opacity="0.81" style="animation: starTwinkle 3.9s ease-in-out 2.7s infinite alternate;"/>
+    <circle cx="767" cy="222" r="1.0" fill="#ffffff" opacity="0.4" style="animation: starTwinkle 5.0s ease-in-out 1.5s infinite alternate;"/>
+  </g>
+
+  <!-- Shooting Star (Meteor) -->
+  <g class="meteor">
+    <line x1="0" y1="0" x2="80" y2="40" stroke="url(#meteorGrad)" stroke-width="2" stroke-linecap="round"/>
+    <defs>
+      <linearGradient id="meteorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+        <stop offset="70%" stop-color="#00f0ff" stop-opacity="0.8"/>
+        <stop offset="100%" stop-color="#ffffff" stop-opacity="1"/>
+      </linearGradient>
+    </defs>
+    <circle cx="80" cy="40" r="2.5" fill="#ffffff" filter="url(#softGlow)"/>
+  </g>
+
+  <!-- ================= 3D ROTATING PLANET SYSTEM ================= -->
+  <g id="planet-system" transform="translate(40, 0)">
+    <!-- Outer Atmospheric Corona Glow -->
+    <circle cx="720" cy="130" r="82" fill="none" stroke="#00f0ff" stroke-width="6" opacity="0.35" filter="url(#glowFilter)"/>
+    <circle cx="720" cy="130" r="79" fill="none" stroke="#a855f7" stroke-width="3" opacity="0.5" style="animation: pulseAura 4s ease-in-out infinite;"/>
+
+    <!-- Planetary Rings: Back Half (Behind Planet) -->
+    <g transform="rotate(-22 720 130)">
+      <ellipse cx="720" cy="130" rx="145" ry="36" fill="none" stroke="#00f0ff" stroke-width="4" stroke-opacity="0.45" stroke-dasharray="8 4"/>
+      <ellipse cx="720" cy="130" rx="138" ry="32" fill="none" stroke="#e879f9" stroke-width="2.5" stroke-opacity="0.5" style="animation: ringGlowPulse 3s ease-in-out infinite;"/>
+      <ellipse cx="720" cy="130" rx="126" ry="26" fill="none" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.3"/>
+    </g>
+
+    <!-- Planet Body (Sphere Base) -->
+    <circle cx="720" cy="130" r="75" fill="url(#planetSphere)"/>
+
+    <!-- Rotating Surface Continental Terrain / Atmosphere Bands (Clipped to Sphere) -->
+    <g clip-path="url(#planetClip)">
+      <g style="animation: rotateTerrain 14s linear infinite;">
+        <!-- Two cycles of detailed vector atmospheric & continental maps for seamless loop -->
+        <g id="terrain-pattern">
+          <!-- Continents & Cyber-Grid Bands -->
+          <path d="M640,80 Q670,60 700,85 T760,80 T820,95 T880,75 T940,90" fill="none" stroke="#34d399" stroke-width="12" stroke-linecap="round" opacity="0.35"/>
+          <path d="M620,110 Q660,130 710,105 T790,125 T860,100 T920,120 T980,105" fill="none" stroke="#22d3ee" stroke-width="16" stroke-linecap="round" opacity="0.4"/>
+          <path d="M630,145 Q680,120 730,150 T810,135 T890,160 T960,140" fill="none" stroke="#818cf8" stroke-width="14" stroke-linecap="round" opacity="0.35"/>
+          <path d="M650,175 Q690,195 750,170 T830,185 T900,165 T970,180" fill="none" stroke="#06b6d4" stroke-width="10" stroke-linecap="round" opacity="0.3"/>
+          
+          <!-- Glowing City Lights / Tech Nodes on dark side -->
+          <circle cx="680" cy="130" r="1.5" fill="#fef08a" filter="url(#softGlow)"/>
+          <circle cx="740" cy="115" r="1.8" fill="#fef08a" filter="url(#softGlow)"/>
+          <circle cx="790" cy="140" r="2.0" fill="#fef08a" filter="url(#softGlow)"/>
+          <circle cx="850" cy="120" r="1.5" fill="#fef08a" filter="url(#softGlow)"/>
+          <circle cx="910" cy="150" r="2.2" fill="#fef08a" filter="url(#softGlow)"/>
+        </g>
+        
+        <!-- Duplicate Offset for Continuous Infinite Rotation -->
+        <g transform="translate(300, 0)">
+          <path d="M640,80 Q670,60 700,85 T760,80 T820,95 T880,75 T940,90" fill="none" stroke="#34d399" stroke-width="12" stroke-linecap="round" opacity="0.35"/>
+          <path d="M620,110 Q660,130 710,105 T790,125 T860,100 T920,120 T980,105" fill="none" stroke="#22d3ee" stroke-width="16" stroke-linecap="round" opacity="0.4"/>
+          <path d="M630,145 Q680,120 730,150 T810,135 T890,160 T960,140" fill="none" stroke="#818cf8" stroke-width="14" stroke-linecap="round" opacity="0.35"/>
+          <path d="M650,175 Q690,195 750,170 T830,185 T900,165 T970,180" fill="none" stroke="#06b6d4" stroke-width="10" stroke-linecap="round" opacity="0.3"/>
+          <circle cx="680" cy="130" r="1.5" fill="#fef08a" filter="url(#softGlow)"/>
+          <circle cx="740" cy="115" r="1.8" fill="#fef08a" filter="url(#softGlow)"/>
+          <circle cx="790" cy="140" r="2.0" fill="#fef08a" filter="url(#softGlow)"/>
+          <circle cx="850" cy="120" r="1.5" fill="#fef08a" filter="url(#softGlow)"/>
+          <circle cx="910" cy="150" r="2.2" fill="#fef08a" filter="url(#softGlow)"/>
+        </g>
+      </g>
+      
+      <!-- Planet Sphere 3D Shadow Overlay (Day/Night Terminator) -->
+      <circle cx="720" cy="130" r="75" fill="url(#planetCorona)"/>
+      <radialGradient id="sphereShadow" cx="25%" cy="25%" r="75%">
+        <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+        <stop offset="40%" stop-color="#000000" stop-opacity="0"/>
+        <stop offset="70%" stop-color="#000000" stop-opacity="0.75"/>
+        <stop offset="100%" stop-color="#020617" stop-opacity="0.96"/>
+      </radialGradient>
+      <circle cx="720" cy="130" r="75" fill="url(#sphereShadow)"/>
+    </g>
+
+    <!-- Planetary Rings: Front Half (Casts In Front of Planet) -->
+    <g transform="rotate(-22 720 130)" clip-path="url(#ringFrontClip)">
+      <ellipse cx="720" cy="130" rx="145" ry="36" fill="none" stroke="#00f0ff" stroke-width="4.5" stroke-opacity="0.85" filter="url(#softGlow)"/>
+      <ellipse cx="720" cy="130" rx="138" ry="32" fill="none" stroke="#f472b6" stroke-width="3" stroke-opacity="0.9" style="animation: ringGlowPulse 3s ease-in-out infinite;"/>
+      <ellipse cx="720" cy="130" rx="126" ry="26" fill="none" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.6"/>
+    </g>
+
+    <!-- Orbiting Companion Moon -->
+    <g style="transform-origin: 720px 130px; animation: orbitMoon 10s linear infinite;">
+      <circle cx="720" cy="130" r="11" fill="url(#moonGrad)" filter="url(#softGlow)"/>
+      <circle cx="720" cy="130" r="11" fill="none" stroke="#38bdf8" stroke-width="0.8" opacity="0.6"/>
+    </g>
+  </g>
+
+  <!-- ================= FOREGROUND HERO BRANDING & IDENTITY ================= -->
+  <!-- Subtle Glass Backdrop for Crisp Readability -->
+  <rect x="30" y="30" width="560" height="200" rx="16" fill="rgba(6, 11, 28, 0.65)" stroke="rgba(0, 240, 255, 0.25)" stroke-width="1.2" style="backdrop-filter: blur(10px);"/>
+
+  <!-- Corner Sci-Fi Telemetry Accents -->
+  <path d="M42,42 L60,42 M42,42 L42,60" stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M578,42 L560,42 M578,42 L578,60" stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M42,218 L60,218 M42,218 L42,200" stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M578,218 L560,218 M578,218 L578,200" stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.8"/>
+
+  <!-- Live Status Beacon -->
+  <g transform="translate(50, 56)">
+    <circle cx="6" cy="6" r="4" fill="#00f0ff" style="animation: starTwinkle 2s infinite;"/>
+    <circle cx="6" cy="6" r="8" fill="none" stroke="#00f0ff" stroke-width="1.2" opacity="0.6" style="animation: pulseAura 2s infinite;"/>
+    <text x="22" y="10" fill="#00f0ff" font-family="'Orbitron', Segoe UI, sans-serif" font-size="10" font-weight="900" letter-spacing="2">SYSTEM AUTONOMOUS // ACTIVE</text>
+  </g>
+
+  <!-- Main Name Title -->
+  <text x="50" y="112" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="29" font-weight="900" letter-spacing="2" filter="url(#softGlow)">
+    JAVOHIRBEK ASQAROV
+  </text>
+  <text x="475" y="112" fill="#00f0ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="800" letter-spacing="1">
+    (JASPER)
+  </text>
+
+  <!-- Subtitle -->
+  <text x="50" y="142" fill="#38bdf8" font-family="'Orbitron', Segoe UI, sans-serif" font-size="11.5" font-weight="800" letter-spacing="3.5">
+    FULL-STACK ARCHITECT &amp; AI SYSTEMS ENGINEER
+  </text>
+
+  <!-- Interactive Glowing Badges -->
+  <g transform="translate(50, 164)">
+    <!-- Badge 1: Next & FastAPI -->
+    <g transform="translate(0, 0)">
+      <rect width="126" height="28" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="#00f0ff" stroke-width="1" stroke-opacity="0.6"/>
+      <text x="63" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.5" text-anchor="middle">⚡ FASTAPI &amp; NEXT.JS</text>
+    </g>
+
+    <!-- Badge 2: AI Agents -->
+    <g transform="translate(134, 0)">
+      <rect width="124" height="28" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.7"/>
+      <text x="62" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.5" text-anchor="middle">🤖 GEMINI AI AGENTS</text>
+    </g>
+
+    <!-- Badge 3: Neural Voice -->
+    <g transform="translate(266, 0)">
+      <rect width="126" height="28" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.7"/>
+      <text x="63" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.5" text-anchor="middle">🎙️ VOICE COPILOT</text>
+    </g>
+
+    <!-- Badge 4: FinTech SDKs -->
+    <g transform="translate(400, 0)">
+      <rect width="112" height="28" rx="8" fill="rgba(15, 23, 42, 0.85)" stroke="#4ade80" stroke-width="1" stroke-opacity="0.7"/>
+      <text x="56" y="18" fill="#f8fafc" font-family="sans-serif" font-size="10.5" font-weight="700" letter-spacing="0.5" text-anchor="middle">💳 FINTECH SDKs</text>
+    </g>
+  </g>
+</svg>

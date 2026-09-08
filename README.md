@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- 3D COSMIC HOLOGRAPHIC BANNER -->
-<img src="assets/header_banner.svg" width="100%" alt="Jasper Developer Banner" />
+<img src="assets/cosmic_header.svg" width="100%" alt="Jasper Developer Banner" />
 
 <br/><br/>
 
