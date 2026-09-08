@@ -1,9 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 180" width="100%" height="180">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="240">
   <defs>
-    <radialGradient id="spaceGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#0e1e3e" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#04060c" stop-opacity="1"/>
+    <radialGradient id="arcadeBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#060c20"/>
+      <stop offset="70%" stop-color="#030510"/>
+      <stop offset="100%" stop-color="#010207"/>
     </radialGradient>
+    <linearGradient id="mazeNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
+    </linearGradient>
     <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
       <feComposite in="SourceGraphic" in2="blur" operator="over"/>
@@ -11,144 +17,199 @@
   </defs>
 
   <style>
-    @keyframes pacmanMove {
-      0% { transform: translateX(-40px); }
-      100% { transform: translateX(940px); }
+    /* Coordinate Waypoint Animation for Pacman */
+    /* Total Path: 
+       0% -> (40, 60) [moving right]
+       30% -> (850, 60) [turn down]
+       35% -> (850, 115) [moving left]
+       65% -> (50, 115) [turn down]
+       70% -> (50, 170) [moving right]
+       100% -> (850, 170) [loop]
+    */
+    @keyframes pacmanCoords {
+      0% { transform: translate(40px, 60px) scaleX(1); }
+      29% { transform: translate(840px, 60px) scaleX(1); }
+      30% { transform: translate(850px, 60px) rotate(90deg); }
+      34% { transform: translate(850px, 115px) rotate(90deg); }
+      35% { transform: translate(840px, 115px) scaleX(-1); }
+      64% { transform: translate(60px, 115px) scaleX(-1); }
+      65% { transform: translate(50px, 115px) rotate(90deg); }
+      69% { transform: translate(50px, 170px) rotate(90deg); }
+      70% { transform: translate(60px, 170px) scaleX(1); }
+      100% { transform: translate(850px, 170px) scaleX(1); }
     }
+
+    /* Ghosts follow with coordinate offset */
+    @keyframes ghostRedCoords {
+      0% { transform: translate(0px, 60px) scaleX(1); }
+      29% { transform: translate(800px, 60px) scaleX(1); }
+      30% { transform: translate(810px, 60px) rotate(90deg); }
+      34% { transform: translate(810px, 115px) rotate(90deg); }
+      35% { transform: translate(800px, 115px) scaleX(-1); }
+      64% { transform: translate(100px, 115px) scaleX(-1); }
+      65% { transform: translate(90px, 115px) rotate(90deg); }
+      69% { transform: translate(90px, 170px) rotate(90deg); }
+      70% { transform: translate(100px, 170px) scaleX(1); }
+      100% { transform: translate(810px, 170px) scaleX(1); }
+    }
+
+    @keyframes ghostPinkCoords {
+      0% { transform: translate(-35px, 60px) scaleX(1); }
+      29% { transform: translate(765px, 60px) scaleX(1); }
+      30% { transform: translate(775px, 60px) rotate(90deg); }
+      34% { transform: translate(775px, 115px) rotate(90deg); }
+      35% { transform: translate(765px, 115px) scaleX(-1); }
+      64% { transform: translate(135px, 115px) scaleX(-1); }
+      65% { transform: translate(125px, 115px) rotate(90deg); }
+      69% { transform: translate(125px, 170px) rotate(90deg); }
+      70% { transform: translate(135px, 170px) scaleX(1); }
+      100% { transform: translate(775px, 170px) scaleX(1); }
+    }
+
+    @keyframes ghostCyanCoords {
+      0% { transform: translate(-70px, 60px) scaleX(1); }
+      29% { transform: translate(730px, 60px) scaleX(1); }
+      30% { transform: translate(740px, 60px) rotate(90deg); }
+      34% { transform: translate(740px, 115px) rotate(90deg); }
+      35% { transform: translate(730px, 115px) scaleX(-1); }
+      64% { transform: translate(170px, 115px) scaleX(-1); }
+      65% { transform: translate(160px, 115px) rotate(90deg); }
+      69% { transform: translate(160px, 170px) rotate(90deg); }
+      70% { transform: translate(170px, 170px) scaleX(1); }
+      100% { transform: translate(740px, 170px) scaleX(1); }
+    }
+
+    @keyframes ghostOrangeCoords {
+      0% { transform: translate(-105px, 60px) scaleX(1); }
+      29% { transform: translate(695px, 60px) scaleX(1); }
+      30% { transform: translate(705px, 60px) rotate(90deg); }
+      34% { transform: translate(705px, 115px) rotate(90deg); }
+      35% { transform: translate(695px, 115px) scaleX(-1); }
+      64% { transform: translate(205px, 115px) scaleX(-1); }
+      65% { transform: translate(195px, 115px) rotate(90deg); }
+      69% { transform: translate(195px, 170px) rotate(90deg); }
+      70% { transform: translate(205px, 170px) scaleX(1); }
+      100% { transform: translate(705px, 170px) scaleX(1); }
+    }
+
     @keyframes chomp {
-      0%, 100% { d: path("M 20 20 L 38 7 A 20 20 0 1 0 38 33 Z"); }
-      50% { d: path("M 20 20 L 40 20 A 20 20 0 1 0 40 20 Z"); }
+      0%, 100% { d: path("M0,0 L14,-14 A20,20 0 1,0 14,14 Z"); }
+      50% { d: path("M0,0 L20,-2 A20,20 0 1,0 20,2 Z"); }
     }
-    @keyframes ghostFloat {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-4px); }
+
+    @keyframes pelletPulse {
+      0%, 100% { transform: scale(1); opacity: 0.7; }
+      50% { transform: scale(1.3); opacity: 1; }
     }
-    @keyframes dotFade {
-      0%, 45% { opacity: 1; }
-      50%, 100% { opacity: 0.15; }
+
+    .pacman-runner {
+      animation: pacmanCoords 16s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
-    .grid-block { rx: 3px; ry: 3px; }
-    .pacman-runner { animation: pacmanMove 12s linear infinite; }
-    .pacman-body { fill: #FFE600; filter: drop-shadow(0 0 8px #ffe600); }
-    .ghost-red { fill: #FF0033; filter: drop-shadow(0 0 6px #ff0033); }
-    .ghost-pink { fill: #FF88EE; filter: drop-shadow(0 0 6px #ff88ee); }
-    .ghost-cyan { fill: #00F0FF; filter: drop-shadow(0 0 6px #00f0ff); }
-    .ghost-orange { fill: #FF9900; filter: drop-shadow(0 0 6px #ff9900); }
-    .maze-wall { stroke: #00F0FF; stroke-width: 2.5; fill: none; opacity: 0.75; filter: drop-shadow(0 0 4px #00f0ff); }
+    .ghost-red {
+      animation: ghostRedCoords 16s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .ghost-pink {
+      animation: ghostPinkCoords 16s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .ghost-cyan {
+      animation: ghostCyanCoords 16s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .ghost-orange {
+      animation: ghostOrangeCoords 16s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .chomp-mouth {
+      animation: chomp 0.28s linear infinite;
+    }
   </style>
 
-  <!-- Background Space Canvas -->
-  <rect width="900" height="180" rx="16" fill="url(#spaceGlow)" stroke="#00f0ff" stroke-opacity="0.3" stroke-width="1.5"/>
+  <!-- Arcade Outer Frame -->
+  <rect width="900" height="240" rx="16" fill="url(#arcadeBg)" stroke="#00f0ff" stroke-width="1.6" stroke-opacity="0.6"/>
 
-  <!-- Month Markers -->
-  <g fill="#64748b" font-family="Segoe UI, sans-serif" font-size="10" font-weight="600">
-    <text x="40" y="24">Jan</text>
-    <text x="120" y="24">Feb</text>
-    <text x="200" y="24">Mar</text>
-    <text x="280" y="24">Apr</text>
-    <text x="360" y="24">May</text>
-    <text x="440" y="24">Jun</text>
-    <text x="520" y="24">Jul</text>
-    <text x="600" y="24">Aug</text>
-    <text x="680" y="24">Sep</text>
-    <text x="760" y="24">Oct</text>
-    <text x="840" y="24">Dec</text>
+  <!-- Top Arcade HUD -->
+  <g transform="translate(30, 25)">
+    <text x="0" y="0" fill="#facc15" font-family="'Orbitron', Segoe UI, sans-serif" font-size="11" font-weight="900" letter-spacing="2">1UP: 384,920</text>
+    <text x="260" y="0" fill="#00f0ff" font-family="'Orbitron', Segoe UI, sans-serif" font-size="11" font-weight="900" letter-spacing="3">HIGH SCORE: 999,990</text>
+    <text x="560" y="0" fill="#a855f7" font-family="'Orbitron', Segoe UI, sans-serif" font-size="11" font-weight="900" letter-spacing="2">MAP: CONTRIBUTIONS 3D</text>
+    <text x="760" y="0" fill="#4ade80" font-family="'Orbitron', Segoe UI, sans-serif" font-size="11" font-weight="900" letter-spacing="2">STAGE 14</text>
   </g>
 
-  <!-- Contribution Grid Dot Matrix -->
-  <g opacity="0.65">
-    <!-- Level 0 (Dark) -->
-    <rect x="50" y="45" width="12" height="12" class="grid-block" fill="#0d1527"/>
-    <rect x="70" y="45" width="12" height="12" class="grid-block" fill="#0d1527"/>
-    <rect x="90" y="45" width="12" height="12" class="grid-block" fill="#004422"/>
-    <rect x="110" y="45" width="12" height="12" class="grid-block" fill="#00f0ff"/>
-    <rect x="130" y="45" width="12" height="12" class="grid-block" fill="#00aa44"/>
-    <rect x="150" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="170" y="45" width="12" height="12" class="grid-block" fill="#00f0ff"/>
-    <rect x="190" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="210" y="45" width="12" height="12" class="grid-block" fill="#00aa44"/>
-    <rect x="230" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="250" y="45" width="12" height="12" class="grid-block" fill="#00f0ff"/>
-    <rect x="270" y="45" width="12" height="12" class="grid-block" fill="#004422"/>
-    <rect x="290" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="310" y="45" width="12" height="12" class="grid-block" fill="#00aa44"/>
-    <rect x="330" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="350" y="45" width="12" height="12" class="grid-block" fill="#00f0ff"/>
-    <rect x="370" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="390" y="45" width="12" height="12" class="grid-block" fill="#00aa44"/>
-    <rect x="410" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="430" y="45" width="12" height="12" class="grid-block" fill="#00f0ff"/>
-    <rect x="450" y="45" width="12" height="12" class="grid-block" fill="#004422"/>
-    <rect x="470" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="490" y="45" width="12" height="12" class="grid-block" fill="#00aa44"/>
-    <rect x="510" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="530" y="45" width="12" height="12" class="grid-block" fill="#00f0ff"/>
-    <rect x="550" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="570" y="45" width="12" height="12" class="grid-block" fill="#00aa44"/>
-    <rect x="590" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="610" y="45" width="12" height="12" class="grid-block" fill="#00f0ff"/>
-    <rect x="630" y="45" width="12" height="12" class="grid-block" fill="#004422"/>
-    <rect x="650" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="670" y="45" width="12" height="12" class="grid-block" fill="#00aa44"/>
-    <rect x="690" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="710" y="45" width="12" height="12" class="grid-block" fill="#00f0ff"/>
-    <rect x="730" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="750" y="45" width="12" height="12" class="grid-block" fill="#00aa44"/>
-    <rect x="770" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
-    <rect x="790" y="45" width="12" height="12" class="grid-block" fill="#00f0ff"/>
-    <rect x="810" y="45" width="12" height="12" class="grid-block" fill="#004422"/>
-    <rect x="830" y="45" width="12" height="12" class="grid-block" fill="#00ff66"/>
+  <!-- Neon Maze Track Lines (3 Coordinate Corridor Lanes) -->
+  <g stroke="url(#mazeNeon)" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.65" filter="url(#neonGlow)">
+    <!-- Top Lane Border -->
+    <path d="M 30,42 L 870,42 L 870,78 L 30,78"/>
+    <!-- Middle Lane Border -->
+    <path d="M 870,98 L 30,98 L 30,132 L 870,132"/>
+    <!-- Bottom Lane Border -->
+    <path d="M 30,152 L 870,152 L 870,188 L 30,188"/>
   </g>
 
-  <!-- Maze Lines -->
-  <path d="M 30 85 L 180 85 L 180 140 L 320 140 M 240 85 L 450 85 L 450 140 M 520 140 L 680 140 L 680 85 L 870 85" class="maze-wall"/>
+  <!-- Contribution Pellets Matrix Along Lane Coordinates -->
+  <g id="pellets">
+    <!-- Lane 1 Pellets (y=60) -->
+    <g fill="#22c55e" opacity="0.75">
+      <circle cx="80" cy="60" r="3.5"/><circle cx="120" cy="60" r="3.5"/><circle cx="160" cy="60" r="3.5"/><circle cx="200" cy="60" r="3.5"/><circle cx="240" cy="60" r="3.5"/><circle cx="280" cy="60" r="3.5"/><circle cx="320" cy="60" r="3.5"/><circle cx="360" cy="60" r="3.5"/><circle cx="400" cy="60" r="3.5"/><circle cx="440" cy="60" r="3.5"/><circle cx="480" cy="60" r="3.5"/><circle cx="520" cy="60" r="3.5"/><circle cx="560" cy="60" r="3.5"/><circle cx="600" cy="60" r="3.5"/><circle cx="640" cy="60" r="3.5"/><circle cx="680" cy="60" r="3.5"/><circle cx="720" cy="60" r="3.5"/><circle cx="760" cy="60" r="3.5"/><circle cx="800" cy="60" r="3.5"/>
+    </g>
+    <!-- Power Pellet Top-Right -->
+    <circle cx="840" cy="60" r="7" fill="#facc15" filter="url(#neonGlow)" style="animation: pelletPulse 1s infinite; transform-origin: 840px 60px;"/>
 
-  <!-- Energy Power Pellets -->
-  <circle cx="95" cy="85" r="5" fill="#FFE600" filter="url(#neonGlow)"/>
-  <circle cx="270" cy="85" r="5" fill="#FFE600" filter="url(#neonGlow)"/>
-  <circle cx="580" cy="85" r="5" fill="#FFE600" filter="url(#neonGlow)"/>
-  <circle cx="780" cy="85" r="5" fill="#FFE600" filter="url(#neonGlow)"/>
+    <!-- Lane 2 Pellets (y=115) -->
+    <g fill="#06b6d4" opacity="0.75">
+      <circle cx="800" cy="115" r="3.5"/><circle cx="760" cy="115" r="3.5"/><circle cx="720" cy="115" r="3.5"/><circle cx="680" cy="115" r="3.5"/><circle cx="640" cy="115" r="3.5"/><circle cx="600" cy="115" r="3.5"/><circle cx="560" cy="115" r="3.5"/><circle cx="520" cy="115" r="3.5"/><circle cx="480" cy="115" r="3.5"/><circle cx="440" cy="115" r="3.5"/><circle cx="400" cy="115" r="3.5"/><circle cx="360" cy="115" r="3.5"/><circle cx="320" cy="115" r="3.5"/><circle cx="280" cy="115" r="3.5"/><circle cx="240" cy="115" r="3.5"/><circle cx="200" cy="115" r="3.5"/><circle cx="160" cy="115" r="3.5"/><circle cx="120" cy="115" r="3.5"/>
+    </g>
+    <!-- Power Pellet Mid-Left -->
+    <circle cx="70" cy="115" r="7" fill="#ec4899" filter="url(#neonGlow)" style="animation: pelletPulse 1s infinite; transform-origin: 70px 115px;"/>
 
-  <!-- ANIMATED PACMAN & GHOST SQUAD -->
+    <!-- Lane 3 Pellets (y=170) -->
+    <g fill="#38bdf8" opacity="0.75">
+      <circle cx="120" cy="170" r="3.5"/><circle cx="160" cy="170" r="3.5"/><circle cx="200" cy="170" r="3.5"/><circle cx="240" cy="170" r="3.5"/><circle cx="280" cy="170" r="3.5"/><circle cx="320" cy="170" r="3.5"/><circle cx="360" cy="170" r="3.5"/><circle cx="400" cy="170" r="3.5"/><circle cx="440" cy="170" r="3.5"/><circle cx="480" cy="170" r="3.5"/><circle cx="520" cy="170" r="3.5"/><circle cx="560" cy="170" r="3.5"/><circle cx="600" cy="170" r="3.5"/><circle cx="640" cy="170" r="3.5"/><circle cx="680" cy="170" r="3.5"/><circle cx="720" cy="170" r="3.5"/><circle cx="760" cy="170" r="3.5"/><circle cx="800" cy="170" r="3.5"/>
+    </g>
+    <!-- Cherry Bonus Item -->
+    <g transform="translate(840, 162)">
+      <circle cx="0" cy="8" r="5" fill="#ef4444" filter="url(#neonGlow)"/>
+      <circle cx="8" cy="8" r="5" fill="#ef4444" filter="url(#neonGlow)"/>
+      <path d="M0,4 Q4,-4 8,-2" stroke="#22c55e" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+
+  <!-- ================= GHOSTS FOLLOWING COORDINATES ================= -->
+  <!-- Ghost 4 (Clyde - Orange) -->
+  <g class="ghost-orange">
+    <path d="M-10,8 C-10,-6 10,-6 10,8 L10,12 L6,8 L2,12 L-2,8 L-6,12 L-10,8 Z" fill="#f97316" filter="url(#neonGlow)"/>
+    <circle cx="-3" cy="2" r="3" fill="#ffffff"/><circle cx="-2" cy="2" r="1.5" fill="#000000"/>
+    <circle cx="5" cy="2" r="3" fill="#ffffff"/><circle cx="6" cy="2" r="1.5" fill="#000000"/>
+  </g>
+
+  <!-- Ghost 3 (Inky - Cyan) -->
+  <g class="ghost-cyan">
+    <path d="M-10,8 C-10,-6 10,-6 10,8 L10,12 L6,8 L2,12 L-2,8 L-6,12 L-10,8 Z" fill="#06b6d4" filter="url(#neonGlow)"/>
+    <circle cx="-3" cy="2" r="3" fill="#ffffff"/><circle cx="-2" cy="2" r="1.5" fill="#000000"/>
+    <circle cx="5" cy="2" r="3" fill="#ffffff"/><circle cx="6" cy="2" r="1.5" fill="#000000"/>
+  </g>
+
+  <!-- Ghost 2 (Pinky - Pink) -->
+  <g class="ghost-pink">
+    <path d="M-10,8 C-10,-6 10,-6 10,8 L10,12 L6,8 L2,12 L-2,8 L-6,12 L-10,8 Z" fill="#ec4899" filter="url(#neonGlow)"/>
+    <circle cx="-3" cy="2" r="3" fill="#ffffff"/><circle cx="-2" cy="2" r="1.5" fill="#000000"/>
+    <circle cx="5" cy="2" r="3" fill="#ffffff"/><circle cx="6" cy="2" r="1.5" fill="#000000"/>
+  </g>
+
+  <!-- Ghost 1 (Blinky - Red) -->
+  <g class="ghost-red">
+    <path d="M-10,8 C-10,-6 10,-6 10,8 L10,12 L6,8 L2,12 L-2,8 L-6,12 L-10,8 Z" fill="#ef4444" filter="url(#neonGlow)"/>
+    <circle cx="-3" cy="2" r="3" fill="#ffffff"/><circle cx="-2" cy="2" r="1.5" fill="#000000"/>
+    <circle cx="5" cy="2" r="3" fill="#ffffff"/><circle cx="6" cy="2" r="1.5" fill="#000000"/>
+  </g>
+
+  <!-- ================= PACMAN HERO TRAVELING COORDINATES ================= -->
   <g class="pacman-runner">
-    <!-- Blinky (Red Ghost) -->
-    <g transform="translate(-160, 72)">
-      <path d="M 0 16 A 12 12 0 0 1 24 16 L 24 24 L 20 20 L 16 24 L 12 20 L 8 24 L 4 20 L 0 24 Z" class="ghost-red"/>
-      <circle cx="8" cy="12" r="3" fill="#ffffff"/><circle cx="9" cy="12" r="1.5" fill="#0000ff"/>
-      <circle cx="16" cy="12" r="3" fill="#ffffff"/><circle cx="17" cy="12" r="1.5" fill="#0000ff"/>
-    </g>
-
-    <!-- Pinky (Pink Ghost) -->
-    <g transform="translate(-120, 72)">
-      <path d="M 0 16 A 12 12 0 0 1 24 16 L 24 24 L 20 20 L 16 24 L 12 20 L 8 24 L 4 20 L 0 24 Z" class="ghost-pink"/>
-      <circle cx="8" cy="12" r="3" fill="#ffffff"/><circle cx="9" cy="12" r="1.5" fill="#0000ff"/>
-      <circle cx="16" cy="12" r="3" fill="#ffffff"/><circle cx="17" cy="12" r="1.5" fill="#0000ff"/>
-    </g>
-
-    <!-- Inky (Cyan Ghost) -->
-    <g transform="translate(-80, 72)">
-      <path d="M 0 16 A 12 12 0 0 1 24 16 L 24 24 L 20 20 L 16 24 L 12 20 L 8 24 L 4 20 L 0 24 Z" class="ghost-cyan"/>
-      <circle cx="8" cy="12" r="3" fill="#ffffff"/><circle cx="9" cy="12" r="1.5" fill="#0000ff"/>
-      <circle cx="16" cy="12" r="3" fill="#ffffff"/><circle cx="17" cy="12" r="1.5" fill="#0000ff"/>
-    </g>
-
-    <!-- Clyde (Orange Ghost) -->
-    <g transform="translate(-40, 72)">
-      <path d="M 0 16 A 12 12 0 0 1 24 16 L 24 24 L 20 20 L 16 24 L 12 20 L 8 24 L 4 20 L 0 24 Z" class="ghost-orange"/>
-      <circle cx="8" cy="12" r="3" fill="#ffffff"/><circle cx="9" cy="12" r="1.5" fill="#0000ff"/>
-      <circle cx="16" cy="12" r="3" fill="#ffffff"/><circle cx="17" cy="12" r="1.5" fill="#0000ff"/>
-    </g>
-
-    <!-- Pacman Leading the Race -->
-    <g transform="translate(10, 68)">
-      <circle cx="16" cy="16" r="16" fill="#FFE600" class="pacman-body"/>
-      <polygon points="16,16 32,8 32,24" fill="#04060c"/>
-      <circle cx="14" cy="8" r="2.5" fill="#000000"/>
-    </g>
+    <circle cx="0" cy="0" r="16" fill="#facc15" filter="url(#neonGlow)"/>
+    <path class="chomp-mouth" d="M0,0 L14,-14 A20,20 0 1,0 14,14 Z" fill="#060c20"/>
   </g>
 
-  <!-- Bottom Interactive Status Text -->
-  <text x="450" y="165" fill="#00f0ff" font-family="Orbitron, Segoe UI, sans-serif" font-size="11" font-weight="700" letter-spacing="2" text-anchor="middle">
-    🎮 PACMAN DEV EDITION • EATING COMMITS &amp; LEVELING UP 🚀
-  </text>
+  <!-- Bottom Arcade Footer Status -->
+  <g transform="translate(450, 218)">
+    <text x="0" y="0" fill="#00f0ff" font-family="'Orbitron', Segoe UI, sans-serif" font-size="10.5" font-weight="900" letter-spacing="3" text-anchor="middle">
+      🎮 PACMAN 3-LANE MULTI-COORDINATE MATRIX // EATING GITHUB COMMITS 🚀
+    </text>
+  </g>
 </svg>
