@@ -1,0 +1,39 @@
+name: Daily Autonomous AI Lab 🚀
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Executes every 24 hours at 00:00 UTC
+  workflow_dispatch: # Allows manual trigger anytime from GitHub UI
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install AI & Testing Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install google-genai pytest
+
+      - name: Execute Daily Autonomous AI Builder
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python .github/scripts/daily_builder.py
+
+      - name: Commit and Push Autonomous Daily Software
+        run: |
+          git config --global user.name "Jasper AI Autopilot"
+          git config --global user.email "salomh46@gmail.com"
+          git add .
+          git commit -m "feat(daily-ai-lab): autonomous daily open-source tool build & verified tests [skip ci]" || exit 0
+          git push origin main
