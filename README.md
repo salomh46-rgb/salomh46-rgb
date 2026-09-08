@@ -1,16 +1,18 @@
 <div align="center">
 
-<!-- 3D COSMIC GLOW HEADER BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,4,8,12&height=260&section=header&text=JAVOHIRBEK%20ASQAROV%20(JASPER)&fontSize=36&fontColor=ffffff&animation=twinkling&desc=Elite%20Full-Stack%20Architect%20%E2%80%A2%20AI%20%26%20Systems%20Engineer&descSize=18&descAlignY=70&descAlign=50" width="100%" />
+<!-- SELF-HOSTED 100% RELIABLE 3D BANNER -->
+<img src="assets/header_banner.svg" width="100%" alt="Jasper Developer Banner" />
 
-<!-- 3D TYPING ANIMATION -->
+<br/><br/>
+
+<!-- DYNAMIC TYPING TEXT -->
 <a href="https://github.com/salomh46-rgb">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=23&duration=2500&pause=1000&color=00F0FF&center=true&vCenter=true&width=750&lines=Full-Stack+Architect+%7C+Next.js+14+%26+Python+FastAPI;AI+Systems+Engineer+%7C+Gemini+AI+%26+Deep+NLP;Creator+of+Jasper+Live+Voice+Desktop+Copilot;Fintech+SDK+Author+%7C+UzPayment+Payment+Engine;Building+High-Scale+Microservices+%26+Cloud+Autopilots" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=22&duration=2500&pause=1000&color=00F0FF&center=true&vCenter=true&width=750&lines=Full-Stack+Architect+%7C+Next.js+14+%26+Python+FastAPI;AI+Systems+Engineer+%7C+Gemini+AI+%26+Deep+NLP;Creator+of+Jasper+Live+Voice+Desktop+Copilot;Fintech+SDK+Author+%7C+UzPayment+Payment+Engine;Building+High-Scale+Microservices+%26+Cloud+Autopilots" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
-<!-- QUICK CONTACT & SOCIAL BADGES -->
+<!-- SOCIAL & QUICK CONTACT BADGES -->
 <p align="center">
   <a href="https://github.com/salomh46-rgb?tab=followers" target="_blank">
     <img src="https://img.shields.io/github/followers/salomh46-rgb?label=FOLLOWERS&style=for-the-badge&logo=github&color=05070e&logoColor=00f0ff" alt="Followers" />
@@ -35,14 +37,6 @@
 
 ---
 
-### 🏆 3D GitHub Yutuqlar va Trofeylar (Achievements & Trophies)
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=salomh46-rgb&theme=nord&column=7&margin-w=12&margin-h=12&no-bg=true&no-frame=true" width="100%" alt="GitHub Trophies" />
-</div>
-
----
-
 ### 🌌 Men haqimda (Engineering Architecture & Bio)
 
 ```typescript
@@ -62,28 +56,7 @@ interface DeveloperIdentity {
 ### 🛠️ Texnologiyalar Steki (Full-Stack & Cloud Architecture)
 
 <div align="center">
-  <table>
-    <tr>
-      <td align="center" width="25%"><b>Frontend & 3D UI</b></td>
-      <td align="center" width="25%"><b>Backend & APIs</b></td>
-      <td align="center" width="25%"><b>AI & Real-Time</b></td>
-      <td align="center" width="25%"><b>DevOps & DBs</b></td>
-    </tr>
-    <tr>
-      <td align="center">
-        <img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,redux,html,css&perline=4&theme=dark" alt="Frontend" />
-      </td>
-      <td align="center">
-        <img src="https://skillicons.dev/icons?i=python,fastapi,nodejs,django,graphql,express&perline=4&theme=dark" alt="Backend" />
-      </td>
-      <td align="center">
-        <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,postman,workers&perline=4&theme=dark" alt="AI & Realtime" />
-      </td>
-      <td align="center">
-        <img src="https://skillicons.dev/icons?i=postgres,mongodb,sqlite,redis,docker,linux,git,github&perline=4&theme=dark" alt="DevOps" />
-      </td>
-    </tr>
-  </table>
+  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nextjs,tailwind,redux,nodejs,fastapi,django,postgres,mongodb,sqlite,redis,docker,linux,git,github,postman,vscode&perline=10&theme=dark" alt="Tech Stack" />
 </div>
 
 ---
@@ -161,19 +134,19 @@ interface DeveloperIdentity {
 
 ---
 
-### 📈 3D GitHub Faollik Grafigi va Jonli Statistika (Live Analytics)
+### 📊 GitHub Jonli Statistika va Metrikalar (Analytics Dashboard)
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=salomh46-rgb&theme=tokyo-night&hide_border=true&area=true" width="98%" alt="Activity Graph" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats-fast.vercel.app/api?username=salomh46-rgb&show_icons=true&theme=tokyonight&hide_border=true&border_radius=12" width="49%" />
-  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=salomh46-rgb&layout=compact&theme=tokyonight&hide_border=true&border_radius=12" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=salomh46-rgb&theme=tokyonight" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=salomh46-rgb&theme=tokyonight" width="49%" />
 </div>
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=salomh46-rgb&theme=tokyonight&hide_border=true&border_radius=12" width="98%" />
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=salomh46-rgb&theme=tokyonight" width="98%" />
 </div>
 
 ---
@@ -191,9 +164,6 @@ interface DeveloperIdentity {
 ---
 
 <br/>
-
-<!-- FOOTER ANIMATED WAVE -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,4,8,12&height=120&section=footer" width="100%" />
 
 <div align="center">
   <b>✨ "Writing clean code today to power intelligent systems tomorrow." ✨</b><br/>
