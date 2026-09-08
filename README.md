@@ -51,12 +51,6 @@
   <img src="assets/live_tech_radar.svg" width="100%" alt="Animated Tech Stack Carousel" />
 </div>
 
-<br/>
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nextjs,tailwind,redux,nodejs,fastapi,django,postgres,mongodb,sqlite,redis,docker,linux,git,github,postman,vscode&perline=10&theme=dark" alt="Tech Stack Icons" />
-</div>
-
 ---
 
 ### 🌌 Men haqimda (Engineering Architecture & Bio)
