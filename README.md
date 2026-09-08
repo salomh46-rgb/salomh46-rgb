@@ -161,14 +161,10 @@ interface DeveloperIdentity {
 
 ---
 
-### 🐍 GitHub 3D Faollik Iloni (Animated Contribution Snake)
+### 🏎️ GitHub Faollik Magistrali (Turbo Drift Supercar Highway)
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/salomh46-rgb/salomh46-rgb/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/salomh46-rgb/salomh46-rgb/output/github-contribution-grid-snake.svg">
-    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/salomh46-rgb/salomh46-rgb/output/github-contribution-grid-snake-dark.svg" width="100%">
-  </picture>
+  <img src="assets/contribution_drift_track.svg" width="100%" alt="GitHub Contribution Drift Highway" />
 </div>
 
 ---
