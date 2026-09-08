@@ -75,76 +75,31 @@ interface DeveloperIdentity {
 
 ---
 
-### 🚀 Asosiy Flagman Loyihalar (Featured Masterpieces)
+### 🚀 3D Golografik Loyihalar Ko'rgazmasi (Holographic Showcase)
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">🎙️ Jasper AI — Live Voice Desktop Copilot</h3>
-      <p align="center">
-        <b>Windows 11 uchun Jonli O'zbekcha Ovozli Yordamchi (JARVIS Copilot).</b><br/>
-        <i>Real vaqtda uzluksiz o'zbekcha ovozli boshqaruv, Microsoft Neural Speech (`uz-UZ-SardorNeural`), Windows App launcher va tizim auditi.</i>
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Python_3.14-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-        <img src="https://img.shields.io/badge/Neural_Voice-00f0ff?style=flat-square&logo=soundcharts&logoColor=black" />
-        <img src="https://img.shields.io/badge/Windows_Automation-0078D6?style=flat-square&logo=windows&logoColor=white" />
-      </p>
-      <p align="center">
-        👉 <a href="https://github.com/salomh46-rgb/jasper-voice-copilot"><b>[Ko'rish / GitHub Repozitoriya]</b></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">🤖 Voice2Deal AI (@Ovozli_SavdoBOT)</h3>
-      <p align="center">
-        <b>O'zbekiston do'kondorlari uchun #1 Ovozli Savdo, Ombor va Nasiya Daftari AI Tizimi.</b><br/>
-        <i>Ovozli xabardan savdoni avtomatik tanish, 24/7 AI maslahatchi, SQLite WAL, Self-Healing Sentinel va do'kondorlar tarmog'i.</i>
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/Gemini_AI-4285F4?style=flat-square&logo=google&logoColor=white" />
-        <img src="https://img.shields.io/badge/Telegram_Bot-24A1DE?style=flat-square&logo=telegram&logoColor=white" />
-        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
-        <img src="https://img.shields.io/badge/SQLite_WAL-003B57?style=flat-square&logo=sqlite&logoColor=white" />
-      </p>
-      <p align="center">
-        👉 <a href="https://github.com/salomh46-rgb/voice2deal-ai-bot"><b>[Repozitoriya]</b></a> &nbsp;|&nbsp; 🤖 <a href="https://t.me/Ovozli_SavdoBOT"><b>[Telegram Bot]</b></a>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">💳 UzPayment SDK (NPM & PyPI)</h3>
-      <p align="center">
-        <b>Universal Multi-Provider Payment Gateway SDK (Click, Payme, Uzum Bank, Paynet).</b><br/>
-        <i>FastAPI, Django & Node.js plug-and-play adapterlari, avtomatik MD5/HMAC imzo tekshiruvi va bir lahzada checkout link generatori.</i>
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/FinTech_SDK-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Payme_&_Click-0088cc?style=flat-square&logo=contactlesspayment&logoColor=white" />
-        <img src="https://img.shields.io/badge/HMAC_SHA256-4CAF50?style=flat-square&logo=auth0&logoColor=white" />
-      </p>
-      <p align="center">
-        👉 <a href="https://github.com/salomh46-rgb/uzpayment-sdk"><b>[Repozitoriya]</b></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">📊 PulseAPI Monitoring SaaS</h3>
-      <p align="center">
-        <b>Real-Time API & Microservices Heartbeat Sentinel with Telegram Alerting.</b><br/>
-        <i>Multi-region latency monitoring, SSL cert expiry checker, avtomatik insident xabarnomalari va 99.99% SLA monitoring.</i>
-      </p>
-      <p align="center">
-        <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" />
-        <img src="https://img.shields.io/badge/Redis_Cache-DC382D?style=flat-square&logo=redis&logoColor=white" />
-        <img src="https://img.shields.io/badge/Cloud_Sentinel-00f0ff?style=flat-square&logo=prometheus&logoColor=black" />
-      </p>
-      <p align="center">
-        👉 <a href="https://github.com/salomh46-rgb/pulseapi-monitoring"><b>[Repozitoriya]</b></a>
-      </p>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="assets/holographic_showcase.svg" width="100%" alt="3D Holographic Project Showcase Cards" />
+</div>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/salomh46-rgb/jasper-voice-copilot" target="_blank">
+    <img src="https://img.shields.io/badge/🎙️_JASPER_AI-00f0ff?style=for-the-badge&logo=github&logoColor=black" alt="Jasper AI" />
+  </a>
+  &nbsp;
+  <a href="https://t.me/Ovozli_SavdoBOT" target="_blank">
+    <img src="https://img.shields.io/badge/🤖_VOICE2DEAL_BOT-c084fc?style=for-the-badge&logo=telegram&logoColor=white" alt="Voice2Deal Bot" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/salomh46-rgb/uzpayment-sdk" target="_blank">
+    <img src="https://img.shields.io/badge/💳_UZPAYMENT_SDK-2dd4bf?style=for-the-badge&logo=python&logoColor=black" alt="UzPayment" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/salomh46-rgb/pulseapi-monitoring" target="_blank">
+    <img src="https://img.shields.io/badge/📊_PULSEAPI_SAAS-f43f5e?style=for-the-badge&logo=fastapi&logoColor=white" alt="PulseAPI" />
+  </a>
+</div>
 
 ---
 

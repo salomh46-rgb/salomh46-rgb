@@ -1,0 +1,308 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 920 620" width="100%" height="620">
+  <defs>
+    <!-- Background Space Matrix -->
+    <radialGradient id="showcaseBg" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#0b1638"/>
+      <stop offset="60%" stop-color="#040818"/>
+      <stop offset="100%" stop-color="#02040b"/>
+    </radialGradient>
+
+    <!-- Card 1 Glass Gradient (Cyan / Blue) -->
+    <linearGradient id="card1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e2246" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#061024" stop-opacity="0.96"/>
+    </linearGradient>
+
+    <!-- Card 2 Glass Gradient (Violet / Purple) -->
+    <linearGradient id="card2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24103f" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#0e061c" stop-opacity="0.96"/>
+    </linearGradient>
+
+    <!-- Card 3 Glass Gradient (Emerald / Teal) -->
+    <linearGradient id="card3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a2a2e" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#041216" stop-opacity="0.96"/>
+    </linearGradient>
+
+    <!-- Card 4 Glass Gradient (Amber / Rose) -->
+    <linearGradient id="card4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e1428" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#120612" stop-opacity="0.96"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="cardGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes beaconBlink {
+      0%, 100% { opacity: 0.4; transform: scale(0.9); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+    @keyframes holoPulse {
+      0%, 100% { stroke-opacity: 0.4; }
+      50% { stroke-opacity: 0.9; }
+    }
+    .beacon {
+      animation: beaconBlink 1.8s ease-in-out infinite;
+    }
+    .holo-border {
+      animation: holoPulse 3s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Base Container -->
+  <rect width="920" height="620" rx="22" fill="url(#showcaseBg)" stroke="#00f0ff" stroke-opacity="0.35" stroke-width="1.6"/>
+
+  <!-- Top Showcase Header -->
+  <g transform="translate(460, 36)">
+    <rect x="-220" y="-16" width="440" height="30" rx="15" fill="rgba(0, 240, 255, 0.08)" stroke="#00f0ff" stroke-opacity="0.5" stroke-width="1.2"/>
+    <text x="0" y="4" fill="#00f0ff" font-family="'Orbitron', -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="12" font-weight="900" letter-spacing="3.5" text-anchor="middle">
+      🚀 FEATURED MASTERPIECES // CORE ARCHITECTURES 🚀
+    </text>
+  </g>
+
+  <!-- ================= CARD 1: JASPER LIVE VOICE COPILOT ================= -->
+  <g transform="translate(30, 68)" filter="url(#cardGlow)">
+    <rect width="415" height="245" rx="16" fill="url(#card1Grad)" stroke="#00f0ff" stroke-width="1.4" class="holo-border"/>
+    
+    <!-- Top Corner Tech Markers -->
+    <path d="M 12,12 L 24,12 M 12,12 L 12,24" stroke="#00f0ff" stroke-width="1.5" fill="none"/>
+    <path d="M 403,12 L 391,12 M 403,12 L 403,24" stroke="#00f0ff" stroke-width="1.5" fill="none"/>
+
+    <!-- Live Status Pill -->
+    <g transform="translate(24, 25)">
+      <circle cx="5" cy="5" r="4" fill="#00f0ff" class="beacon"/>
+      <circle cx="5" cy="5" r="8" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.6"/>
+      <text x="18" y="9" fill="#00f0ff" font-family="'Orbitron', sans-serif" font-size="9.5" font-weight="900" letter-spacing="1.5">LIVE COPILOT // ACTIVE</text>
+    </g>
+
+    <!-- Star Count -->
+    <g transform="translate(330, 25)">
+      <text x="0" y="9" fill="#facc15" font-family="sans-serif" font-size="11" font-weight="800">⭐ STAR GAZER</text>
+    </g>
+
+    <!-- Project Title -->
+    <text x="24" y="68" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" letter-spacing="0.5">
+      🎙️ Jasper AI — Live Voice Copilot
+    </text>
+
+    <!-- Description Lines -->
+    <text x="24" y="95" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      Windows 11 uchun real-vaqtda to'liq o'zbekcha ovozli
+    </text>
+    <text x="24" y="113" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      boshqaruv (JARVIS Copilot). Microsoft Neural Speech,
+    </text>
+    <text x="24" y="131" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      App Launcher va chuqur tizimli avtomatlashtirish.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(24, 152)">
+      <rect x="0" y="0" width="82" height="24" rx="6" fill="rgba(55, 118, 171, 0.25)" stroke="#3776AB" stroke-width="1"/>
+      <text x="41" y="16" fill="#93c5fd" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Python 3.14</text>
+
+      <rect x="90" y="0" width="70" height="24" rx="6" fill="rgba(0, 150, 136, 0.25)" stroke="#009688" stroke-width="1"/>
+      <text x="125" y="16" fill="#5eead4" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">FastAPI</text>
+
+      <rect x="168" y="0" width="94" height="24" rx="6" fill="rgba(0, 240, 255, 0.2)" stroke="#00f0ff" stroke-width="1"/>
+      <text x="215" y="16" fill="#00f0ff" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Neural Voice</text>
+
+      <rect x="270" y="0" width="96" height="24" rx="6" fill="rgba(0, 120, 214, 0.25)" stroke="#0078D6" stroke-width="1"/>
+      <text x="318" y="16" fill="#60a5fa" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Win Automation</text>
+    </g>
+
+    <!-- Bottom Architecture Metrics & Link Button -->
+    <line x1="24" y1="192" x2="391" y2="192" stroke="#00f0ff" stroke-opacity="0.2" stroke-dasharray="4 2"/>
+    <text x="24" y="222" fill="#38bdf8" font-family="'Orbitron', sans-serif" font-size="10" font-weight="800" letter-spacing="1">
+      LATENCY: &lt;42ms // SPEECH: UZ-UZ
+    </text>
+    
+    <g transform="translate(295, 203)">
+      <rect width="96" height="26" rx="6" fill="#0284c7" stroke="#38bdf8" stroke-width="1"/>
+      <text x="48" y="17" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle">REPOSITORIYA ➔</text>
+    </g>
+  </g>
+
+
+  <!-- ================= CARD 2: VOICE2DEAL AI BOT ================= -->
+  <g transform="translate(475, 68)" filter="url(#cardGlow)">
+    <rect width="415" height="245" rx="16" fill="url(#card2Grad)" stroke="#c084fc" stroke-width="1.4" class="holo-border"/>
+    
+    <path d="M 12,12 L 24,12 M 12,12 L 12,24" stroke="#c084fc" stroke-width="1.5" fill="none"/>
+    <path d="M 403,12 L 391,12 M 403,12 L 403,24" stroke="#c084fc" stroke-width="1.5" fill="none"/>
+
+    <g transform="translate(24, 25)">
+      <circle cx="5" cy="5" r="4" fill="#c084fc" class="beacon"/>
+      <circle cx="5" cy="5" r="8" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.6"/>
+      <text x="18" y="9" fill="#c084fc" font-family="'Orbitron', sans-serif" font-size="9.5" font-weight="900" letter-spacing="1.5">TELEGRAM BOT // 24/7</text>
+    </g>
+
+    <g transform="translate(300, 25)">
+      <text x="0" y="9" fill="#facc15" font-family="sans-serif" font-size="11" font-weight="800">⭐ #1 COMMERCE</text>
+    </g>
+
+    <text x="24" y="68" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" letter-spacing="0.5">
+      🤖 Voice2Deal AI (@Ovozli_SavdoBOT)
+    </text>
+
+    <text x="24" y="95" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      O'zbekiston savdogarlari uchun ovozli savdo, ombor va
+    </text>
+    <text x="24" y="113" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      nasiya daftari AI tizimi. Ovozdan avtomatik tanish,
+    </text>
+    <text x="24" y="131" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      SQLite WAL va 24/7 Self-Healing Sentinel.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(24, 152)">
+      <rect x="0" y="0" width="86" height="24" rx="6" fill="rgba(66, 133, 244, 0.25)" stroke="#4285F4" stroke-width="1"/>
+      <text x="43" y="16" fill="#93c5fd" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Gemini AI</text>
+
+      <rect x="94" y="0" width="94" height="24" rx="6" fill="rgba(36, 161, 222, 0.25)" stroke="#24A1DE" stroke-width="1"/>
+      <text x="141" y="16" fill="#7dd3fc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Telegram Bot</text>
+
+      <rect x="196" y="0" width="70" height="24" rx="6" fill="rgba(36, 150, 237, 0.25)" stroke="#2496ED" stroke-width="1"/>
+      <text x="231" y="16" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Docker</text>
+
+      <rect x="274" y="0" width="92" height="24" rx="6" fill="rgba(0, 59, 87, 0.4)" stroke="#38bdf8" stroke-width="1"/>
+      <text x="320" y="16" fill="#67e8f9" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">SQLite WAL</text>
+    </g>
+
+    <line x1="24" y1="192" x2="391" y2="192" stroke="#c084fc" stroke-opacity="0.2" stroke-dasharray="4 2"/>
+    <text x="24" y="222" fill="#c084fc" font-family="'Orbitron', sans-serif" font-size="10" font-weight="800" letter-spacing="1">
+      ENGINE: NLP + SENTINEL 99.9%
+    </text>
+    
+    <g transform="translate(295, 203)">
+      <rect width="96" height="26" rx="6" fill="#7c3aed" stroke="#c084fc" stroke-width="1"/>
+      <text x="48" y="17" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle">BOTNI OCHISH ➔</text>
+    </g>
+  </g>
+
+
+  <!-- ================= CARD 3: UZPAYMENT SDK ================= -->
+  <g transform="translate(30, 335)" filter="url(#cardGlow)">
+    <rect width="415" height="245" rx="16" fill="url(#card3Grad)" stroke="#2dd4bf" stroke-width="1.4" class="holo-border"/>
+    
+    <path d="M 12,12 L 24,12 M 12,12 L 12,24" stroke="#2dd4bf" stroke-width="1.5" fill="none"/>
+    <path d="M 403,12 L 391,12 M 403,12 L 403,24" stroke="#2dd4bf" stroke-width="1.5" fill="none"/>
+
+    <g transform="translate(24, 25)">
+      <circle cx="5" cy="5" r="4" fill="#2dd4bf" class="beacon"/>
+      <circle cx="5" cy="5" r="8" fill="none" stroke="#2dd4bf" stroke-width="1" opacity="0.6"/>
+      <text x="18" y="9" fill="#2dd4bf" font-family="'Orbitron', sans-serif" font-size="9.5" font-weight="900" letter-spacing="1.5">FINTECH SDK // NPM &amp; PYPI</text>
+    </g>
+
+    <g transform="translate(305, 25)">
+      <text x="0" y="9" fill="#facc15" font-family="sans-serif" font-size="11" font-weight="800">⭐ 4-IN-1 GATEWAY</text>
+    </g>
+
+    <text x="24" y="68" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" letter-spacing="0.5">
+      💳 UzPayment SDK (Payme, Click, Uzum)
+    </text>
+
+    <text x="24" y="95" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      Universal Multi-Provider to'lov shlyuzlari integratsiyasi.
+    </text>
+    <text x="24" y="113" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      FastAPI, Django &amp; Node.js plaginlari, avtomatik MD5/HMAC
+    </text>
+    <text x="24" y="131" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      imzo tekshiruvi va bir lahzada checkout generatori.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(24, 152)">
+      <rect x="0" y="0" width="86" height="24" rx="6" fill="rgba(45, 212, 191, 0.25)" stroke="#2dd4bf" stroke-width="1"/>
+      <text x="43" y="16" fill="#5eead4" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">FinTech SDK</text>
+
+      <rect x="94" y="0" width="94" height="24" rx="6" fill="rgba(0, 136, 204, 0.25)" stroke="#0088cc" stroke-width="1"/>
+      <text x="141" y="16" fill="#38bdf8" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Payme &amp; Click</text>
+
+      <rect x="196" y="0" width="98" height="24" rx="6" fill="rgba(76, 175, 80, 0.25)" stroke="#4CAF50" stroke-width="1"/>
+      <text x="245" y="16" fill="#86efac" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">HMAC SHA256</text>
+
+      <rect x="302" y="0" width="70" height="24" rx="6" fill="rgba(240, 80, 50, 0.25)" stroke="#F05032" stroke-width="1"/>
+      <text x="337" y="16" fill="#fca5a5" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">FastAPI</text>
+    </g>
+
+    <line x1="24" y1="192" x2="391" y2="192" stroke="#2dd4bf" stroke-opacity="0.2" stroke-dasharray="4 2"/>
+    <text x="24" y="222" fill="#2dd4bf" font-family="'Orbitron', sans-serif" font-size="10" font-weight="800" letter-spacing="1">
+      SECURITY: PCI-DSS READY // MD5
+    </text>
+    
+    <g transform="translate(295, 203)">
+      <rect width="96" height="26" rx="6" fill="#0d9488" stroke="#2dd4bf" stroke-width="1"/>
+      <text x="48" y="17" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle">REPOSITORIYA ➔</text>
+    </g>
+  </g>
+
+
+  <!-- ================= CARD 4: PULSEAPI MONITORING SAAS ================= -->
+  <g transform="translate(475, 335)" filter="url(#cardGlow)">
+    <rect width="415" height="245" rx="16" fill="url(#card4Grad)" stroke="#f43f5e" stroke-width="1.4" class="holo-border"/>
+    
+    <path d="M 12,12 L 24,12 M 12,12 L 12,24" stroke="#f43f5e" stroke-width="1.5" fill="none"/>
+    <path d="M 403,12 L 391,12 M 403,12 L 403,24" stroke="#f43f5e" stroke-width="1.5" fill="none"/>
+
+    <g transform="translate(24, 25)">
+      <circle cx="5" cy="5" r="4" fill="#f43f5e" class="beacon"/>
+      <circle cx="5" cy="5" r="8" fill="none" stroke="#f43f5e" stroke-width="1" opacity="0.6"/>
+      <text x="18" y="9" fill="#f43f5e" font-family="'Orbitron', sans-serif" font-size="9.5" font-weight="900" letter-spacing="1.5">HEARTBEAT SAAS // 99.99%</text>
+    </g>
+
+    <g transform="translate(305, 25)">
+      <text x="0" y="9" fill="#facc15" font-family="sans-serif" font-size="11" font-weight="800">⭐ CLOUD SENTINEL</text>
+    </g>
+
+    <text x="24" y="68" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" letter-spacing="0.5">
+      📊 PulseAPI Monitoring SaaS
+    </text>
+
+    <text x="24" y="95" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      Real-Time API va mikroxizmatlar holatini monitoring qiluvchi
+    </text>
+    <text x="24" y="113" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      tizim. Multi-region latency tekshiruvi, SSL cert expiry,
+    </text>
+    <text x="24" y="131" fill="#94a3b8" font-family="sans-serif" font-size="11.5" font-weight="500">
+      avtomatik Telegram ogohlantirishlari va SLA nazorati.
+    </text>
+
+    <!-- Tech Badges -->
+    <g transform="translate(24, 152)">
+      <rect x="0" y="0" width="70" height="24" rx="6" fill="rgba(0, 150, 136, 0.25)" stroke="#009688" stroke-width="1"/>
+      <text x="35" y="16" fill="#5eead4" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">FastAPI</text>
+
+      <rect x="78" y="0" width="86" height="24" rx="6" fill="rgba(220, 56, 45, 0.25)" stroke="#DC382D" stroke-width="1"/>
+      <text x="121" y="16" fill="#fca5a5" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Redis Cache</text>
+
+      <rect x="172" y="0" width="102" height="24" rx="6" fill="rgba(0, 240, 255, 0.2)" stroke="#00f0ff" stroke-width="1"/>
+      <text x="223" y="16" fill="#00f0ff" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Cloud Sentinel</text>
+
+      <rect x="282" y="0" width="84" height="24" rx="6" fill="rgba(59, 130, 246, 0.25)" stroke="#3b82f6" stroke-width="1"/>
+      <text x="324" y="16" fill="#93c5fd" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">Prometheus</text>
+    </g>
+
+    <line x1="24" y1="192" x2="391" y2="192" stroke="#f43f5e" stroke-opacity="0.2" stroke-dasharray="4 2"/>
+    <text x="24" y="222" fill="#fb7185" font-family="'Orbitron', sans-serif" font-size="10" font-weight="800" letter-spacing="1">
+      UPTIME: 99.99% // SSL AUTO-CHECK
+    </text>
+    
+    <g transform="translate(295, 203)">
+      <rect width="96" height="26" rx="6" fill="#e11d48" stroke="#f43f5e" stroke-width="1"/>
+      <text x="48" y="17" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle">REPOSITORIYA ➔</text>
+    </g>
+  </g>
+</svg>
