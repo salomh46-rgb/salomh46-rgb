@@ -60,8 +60,8 @@
 
   <!-- Top Showcase Header Badge -->
   <g transform="translate(460, 36)">
-    <rect x="-225" y="-16" width="450" height="32" rx="16" fill="rgba(0, 240, 255, 0.08)" stroke="#00f0ff" stroke-opacity="0.5" stroke-width="1.2"/>
-    <text x="0" y="5" fill="#00f0ff" font-family="'Orbitron', -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11.5" font-weight="900" letter-spacing="3.5" text-anchor="middle">
+    <rect x="-260" y="-16" width="520" height="32" rx="16" fill="rgba(0, 240, 255, 0.08)" stroke="#00f0ff" stroke-opacity="0.5" stroke-width="1.2"/>
+    <text x="0" y="5" fill="#00f0ff" font-family="'Orbitron', -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="11" font-weight="900" letter-spacing="2" text-anchor="middle">
       🚀 FEATURED MASTERPIECES // CORE ARCHITECTURES 🚀
     </text>
   </g>
