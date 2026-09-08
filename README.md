@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- SELF-HOSTED 100% RELIABLE 3D BANNER -->
+<!-- 3D COSMIC HOLOGRAPHIC BANNER -->
 <img src="assets/header_banner.svg" width="100%" alt="Jasper Developer Banner" />
 
 <br/><br/>
@@ -37,6 +37,28 @@
 
 ---
 
+### 🎮 PACMAN DEV ARCADE (GitHub Contribution Game)
+
+<div align="center">
+  <img src="assets/pacman_game.svg" width="100%" alt="Pacman Contribution Game" />
+</div>
+
+---
+
+### ⚡ 3D Dinamik Harakatlanuvchi Texnologiyalar (Live Tech Carousel)
+
+<div align="center">
+  <img src="assets/tech_stack_carousel.svg" width="100%" alt="Animated Tech Stack Carousel" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nextjs,tailwind,redux,nodejs,fastapi,django,postgres,mongodb,sqlite,redis,docker,linux,git,github,postman,vscode&perline=10&theme=dark" alt="Tech Stack Icons" />
+</div>
+
+---
+
 ### 🌌 Men haqimda (Engineering Architecture & Bio)
 
 ```typescript
@@ -50,14 +72,6 @@ interface DeveloperIdentity {
   status: "🚀 Building next-generation Autonomous SaaS & FinTech Platforms";
 }
 ```
-
----
-
-### 🛠️ Texnologiyalar Steki (Full-Stack & Cloud Architecture)
-
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,js,ts,react,nextjs,tailwind,redux,nodejs,fastapi,django,postgres,mongodb,sqlite,redis,docker,linux,git,github,postman,vscode&perline=10&theme=dark" alt="Tech Stack" />
-</div>
 
 ---
 
@@ -143,10 +157,6 @@ interface DeveloperIdentity {
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=salomh46-rgb&theme=tokyonight&hide_border=true&border_radius=12" width="98%" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=salomh46-rgb&theme=tokyonight" width="98%" />
 </div>
 
 ---
