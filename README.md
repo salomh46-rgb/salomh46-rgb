@@ -48,7 +48,7 @@
 ### ⚡ 3D Dinamik Harakatlanuvchi Texnologiyalar (Live Tech Carousel)
 
 <div align="center">
-  <img src="assets/vector_tech_carousel.svg" width="100%" alt="Animated Tech Stack Carousel" />
+  <img src="assets/live_tech_radar.svg" width="100%" alt="Animated Tech Stack Carousel" />
 </div>
 
 <br/>
