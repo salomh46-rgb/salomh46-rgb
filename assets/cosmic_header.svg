@@ -273,11 +273,11 @@
   <path d="M42,218 L60,218 M42,218 L42,200" stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.8"/>
   <path d="M578,218 L560,218 M578,218 L578,200" stroke="#00f0ff" stroke-width="2" fill="none" opacity="0.8"/>
 
-  <!-- Live Status Beacon -->
+  <!-- Live Status Beacon & Orbital Telemetry -->
   <g transform="translate(50, 56)">
     <circle cx="6" cy="6" r="4" fill="#00f0ff" style="animation: starTwinkle 2s infinite;"/>
     <circle cx="6" cy="6" r="8" fill="none" stroke="#00f0ff" stroke-width="1.2" opacity="0.6" style="animation: pulseAura 2s infinite;"/>
-    <text x="22" y="10" fill="#00f0ff" font-family="'Orbitron', Segoe UI, sans-serif" font-size="10" font-weight="900" letter-spacing="2">SYSTEM AUTONOMOUS // ACTIVE</text>
+    <text x="22" y="10" fill="#00f0ff" font-family="'Orbitron', Segoe UI, sans-serif" font-size="9.5" font-weight="900" letter-spacing="2">AUTONOMOUS LAB // TASHKENT 🇺🇿 41.2995° N, 69.2401° E</text>
   </g>
 
   <!-- Main Name Title -->
@@ -289,8 +289,8 @@
   </text>
 
   <!-- Subtitle -->
-  <text x="50" y="142" fill="#38bdf8" font-family="'Orbitron', Segoe UI, sans-serif" font-size="11.5" font-weight="800" letter-spacing="3.5">
-    FULL-STACK ARCHITECT &amp; AI SYSTEMS ENGINEER
+  <text x="50" y="142" fill="#38bdf8" font-family="'Orbitron', Segoe UI, sans-serif" font-size="11" font-weight="800" letter-spacing="3">
+    SENIOR FULL-STACK &amp; AUTONOMOUS AI SYSTEMS ARCHITECT
   </text>
 
   <!-- Interactive Glowing Badges -->

@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="100%" height="260">
+  <defs>
+    <!-- Background Canvas Gradient -->
+    <radialGradient id="matrixBg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#09132e"/>
+      <stop offset="60%" stop-color="#040817"/>
+      <stop offset="100%" stop-color="#020409"/>
+    </radialGradient>
+
+    <!-- Glass Gradients for Cards -->
+    <linearGradient id="card1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1e3d" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#040b17" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="card2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24103a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0a0414" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="card3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c2538" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#030c14" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="card4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082b26" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#02120f" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="bentoShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes chipPulse {
+      0%, 100% { stroke-opacity: 0.4; }
+      50% { stroke-opacity: 0.9; }
+    }
+    .chip {
+      animation: chipPulse 3s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="900" height="260" rx="16" fill="url(#matrixBg)" stroke="#00f0ff" stroke-opacity="0.25" stroke-width="1.4"/>
+
+  <!-- Top Title Accent -->
+  <g transform="translate(450, 22)">
+    <text x="0" y="0" fill="#00f0ff" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" letter-spacing="3" text-anchor="middle">
+      ⚡ QUANTUM TECH MATRIX // SENIOR ARCHITECTURE STACK ⚡
+    </text>
+  </g>
+
+  <!-- ================= CARD 1: CORE SYSTEMS & BACKEND (TOP-LEFT) ================= -->
+  <g transform="translate(18, 38)" filter="url(#bentoShadow)">
+    <rect width="424" height="98" rx="12" fill="url(#card1Grad)" stroke="#00f0ff" stroke-opacity="0.5" stroke-width="1.2" class="chip"/>
+    <text x="16" y="24" fill="#00f0ff" font-family="'Orbitron', sans-serif" font-size="9.5" font-weight="900" letter-spacing="1">
+      ⚙️ CORE SYSTEMS &amp; BACKEND
+    </text>
+    <g transform="translate(16, 38)">
+      <!-- Python 3.14 -->
+      <rect x="0" y="0" width="94" height="22" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="47" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">🐍 Python 3.14</text>
+      <!-- FastAPI -->
+      <rect x="100" y="0" width="76" height="22" rx="6" fill="#1e293b" stroke="#2dd4bf" stroke-width="0.8"/>
+      <text x="138" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">⚡ FastAPI</text>
+      <!-- PostgreSQL -->
+      <rect x="182" y="0" width="96" height="22" rx="6" fill="#1e293b" stroke="#60a5fa" stroke-width="0.8"/>
+      <text x="230" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">🐘 PostgreSQL</text>
+      <!-- Docker -->
+      <rect x="284" y="0" width="76" height="22" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="322" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">🐳 Docker</text>
+    </g>
+    <g transform="translate(16, 66)">
+      <!-- Asyncio -->
+      <rect x="0" y="0" width="108" height="22" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="0.8"/>
+      <text x="54" y="15" fill="#94a3b8" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">⚡ Asyncio Mutex</text>
+      <!-- Redis -->
+      <rect x="114" y="0" width="86" height="22" rx="6" fill="#1e293b" stroke="#f87171" stroke-width="0.8"/>
+      <text x="157" y="15" fill="#fca5a5" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🔥 Redis Cache</text>
+      <!-- Nginx -->
+      <rect x="206" y="0" width="92" height="22" rx="6" fill="#1e293b" stroke="#4ade80" stroke-width="0.8"/>
+      <text x="252" y="15" fill="#86efac" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🌐 Nginx Proxy</text>
+      <!-- Linux VPS -->
+      <rect x="304" y="0" width="88" height="22" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="0.8"/>
+      <text x="348" y="15" fill="#fde68a" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🐧 Linux Daemon</text>
+    </g>
+  </g>
+
+  <!-- ================= CARD 2: AUTONOMOUS AI & NEURAL (TOP-RIGHT) ================= -->
+  <g transform="translate(458, 38)" filter="url(#bentoShadow)">
+    <rect width="424" height="98" rx="12" fill="url(#card2Grad)" stroke="#c084fc" stroke-opacity="0.5" stroke-width="1.2" class="chip"/>
+    <text x="16" y="24" fill="#c084fc" font-family="'Orbitron', sans-serif" font-size="9.5" font-weight="900" letter-spacing="1">
+      🧠 AUTONOMOUS AI &amp; NEURAL SYSTEMS
+    </text>
+    <g transform="translate(16, 38)">
+      <!-- Gemini Multimodal -->
+      <rect x="0" y="0" width="128" height="22" rx="6" fill="#1e293b" stroke="#c084fc" stroke-width="0.8"/>
+      <text x="64" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">✨ Gemini Multimodal</text>
+      <!-- Neural Voice STT/TTS -->
+      <rect x="134" y="0" width="118" height="22" rx="6" fill="#1e293b" stroke="#e879f9" stroke-width="0.8"/>
+      <text x="193" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">🎙️ Neural Voice AI</text>
+      <!-- Subagent Swarms -->
+      <rect x="258" y="0" width="138" height="22" rx="6" fill="#1e293b" stroke="#818cf8" stroke-width="0.8"/>
+      <text x="327" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">🤖 Multi-Agent Swarms</text>
+    </g>
+    <g transform="translate(16, 66)">
+      <!-- Realtime Audio VAD -->
+      <rect x="0" y="0" width="116" height="22" rx="6" fill="#1e293b" stroke="#a78bfa" stroke-width="0.8"/>
+      <text x="58" y="15" fill="#ddd6fe" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">📡 Live Audio VAD</text>
+      <!-- Deep NLP Pipelines -->
+      <rect x="122" y="0" width="114" height="22" rx="6" fill="#1e293b" stroke="#f472b6" stroke-width="0.8"/>
+      <text x="179" y="15" fill="#fbcfe8" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🧬 Deep NLP Pipeline</text>
+      <!-- Autonomous RAG -->
+      <rect x="242" y="0" width="128" height="22" rx="6" fill="#1e293b" stroke="#c084fc" stroke-width="0.8"/>
+      <text x="306" y="15" fill="#e9d5ff" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">📚 Autonomous RAG</text>
+    </g>
+  </g>
+
+  <!-- ================= CARD 3: MODERN FRONTEND & 3D (BOTTOM-LEFT) ================= -->
+  <g transform="translate(18, 146)" filter="url(#bentoShadow)">
+    <rect width="424" height="98" rx="12" fill="url(#card3Grad)" stroke="#38bdf8" stroke-opacity="0.5" stroke-width="1.2" class="chip"/>
+    <text x="16" y="24" fill="#38bdf8" font-family="'Orbitron', sans-serif" font-size="9.5" font-weight="900" letter-spacing="1">
+      🎨 MODERN FRONTEND &amp; 3D WEB
+    </text>
+    <g transform="translate(16, 38)">
+      <!-- Next.js 15 -->
+      <rect x="0" y="0" width="86" height="22" rx="6" fill="#1e293b" stroke="#f8fafc" stroke-width="0.8"/>
+      <text x="43" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">▲ Next.js 15</text>
+      <!-- React 19 -->
+      <rect x="92" y="0" width="84" height="22" rx="6" fill="#1e293b" stroke="#61dafb" stroke-width="0.8"/>
+      <text x="134" y="15" fill="#61dafb" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">⚛️ React 19</text>
+      <!-- Three.js WebGL -->
+      <rect x="182" y="0" width="102" height="22" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="233" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">🌌 Three.js 3D</text>
+      <!-- TypeScript -->
+      <rect x="290" y="0" width="94" height="22" rx="6" fill="#1e293b" stroke="#60a5fa" stroke-width="0.8"/>
+      <text x="337" y="15" fill="#93c5fd" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">🔷 TypeScript</text>
+    </g>
+    <g transform="translate(16, 66)">
+      <!-- Tailwind CSS v4 -->
+      <rect x="0" y="0" width="112" height="22" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="56" y="15" fill="#7dd3fc" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🌊 Tailwind v4</text>
+      <!-- WebSockets -->
+      <rect x="118" y="0" width="96" height="22" rx="6" fill="#1e293b" stroke="#a78bfa" stroke-width="0.8"/>
+      <text x="166" y="15" fill="#c4b5fd" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🔌 WebSockets</text>
+      <!-- Framer Motion -->
+      <rect x="220" y="0" width="108" height="22" rx="6" fill="#1e293b" stroke="#f472b6" stroke-width="0.8"/>
+      <text x="274" y="15" fill="#fbcfe8" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🎭 Motion Physics</text>
+    </g>
+  </g>
+
+  <!-- ================= CARD 4: FINTECH & SECURITY (BOTTOM-RIGHT) ================= -->
+  <g transform="translate(458, 146)" filter="url(#bentoShadow)">
+    <rect width="424" height="98" rx="12" fill="url(#card4Grad)" stroke="#2dd4bf" stroke-opacity="0.5" stroke-width="1.2" class="chip"/>
+    <text x="16" y="24" fill="#2dd4bf" font-family="'Orbitron', sans-serif" font-size="9.5" font-weight="900" letter-spacing="1">
+      💳 FINTECH &amp; ZERO-LEAK SECURITY
+    </text>
+    <g transform="translate(16, 38)">
+      <!-- UzPayment SDK -->
+      <rect x="0" y="0" width="112" height="22" rx="6" fill="#1e293b" stroke="#2dd4bf" stroke-width="0.8"/>
+      <text x="56" y="15" fill="#2dd4bf" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">💳 UzPayment SDK</text>
+      <!-- Payme & Click -->
+      <rect x="118" y="0" width="102" height="22" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8"/>
+      <text x="169" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">🔹 Payme &amp; Click</text>
+      <!-- Uzum Bank -->
+      <rect x="226" y="0" width="88" height="22" rx="6" fill="#1e293b" stroke="#c084fc" stroke-width="0.8"/>
+      <text x="270" y="15" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">🍇 Uzum Bank</text>
+    </g>
+    <g transform="translate(16, 66)">
+      <!-- 100x Tiyin Precision -->
+      <rect x="0" y="0" width="116" height="22" rx="6" fill="#1e293b" stroke="#34d399" stroke-width="0.8"/>
+      <text x="58" y="15" fill="#6ee7b7" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🔒 100x Tiyin Lock</text>
+      <!-- HMAC-SHA256 -->
+      <rect x="122" y="0" width="116" height="22" rx="6" fill="#1e293b" stroke="#4ade80" stroke-width="0.8"/>
+      <text x="180" y="15" fill="#86efac" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🛡️ HMAC-SHA256</text>
+      <!-- Zero Secret Leak -->
+      <rect x="244" y="0" width="138" height="22" rx="6" fill="#1e293b" stroke="#fb7185" stroke-width="0.8"/>
+      <text x="313" y="15" fill="#fca5a5" font-family="sans-serif" font-size="9.5" font-weight="600" text-anchor="middle">🔐 Zero Secret Leak</text>
+    </g>
+  </g>
+</svg>
