@@ -26,8 +26,8 @@
     <img src="https://img.shields.io/badge/✉️_EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   &nbsp;
-  <a href="https://t.me/Ovozli_SavdoBOT" target="_blank">
-    <img src="https://img.shields.io/badge/🤖_VOICE2DEAL_BOT-24A1DE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Bot" />
+  <a href="https://t.me/Dr_eviluz" target="_blank">
+    <img src="https://img.shields.io/badge/✈️_TELEGRAM-24A1DE?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
   </a>
   &nbsp;
   <img src="https://komarev.com/ghpvc/?username=salomh46-rgb&label=PROFILE+VIEWS&color=00f0ff&style=for-the-badge" alt="Profile Views" />
@@ -45,35 +45,35 @@
 
 ---
 
-### 🚀 3D GOLOGRAFIK FLAGMAN LOYIHALAR (FEATURED MASTERPIECES)
+### 🚀 FEATURED FLAGSHIP ARCHITECTURES
 
 <div align="center">
-  <img src="assets/holographic_showcase.svg" width="100%" alt="3D Holographic Project Showcase Cards" />
+  <img src="assets/holographic_showcase.svg" width="100%" alt="Holographic Project Showcase Cards" />
 </div>
 
 <br/>
 
 <div align="center">
   <a href="https://github.com/salomh46-rgb/jasper-voice-copilot" target="_blank">
-    <img src="https://img.shields.io/badge/🎙️_JASPER_AI_COPILOT-00f0ff?style=for-the-badge&logo=github&logoColor=black" alt="Jasper AI" />
-  </a>
-  &nbsp;
-  <a href="https://t.me/Ovozli_SavdoBOT" target="_blank">
-    <img src="https://img.shields.io/badge/🤖_VOICE2DEAL_ECOSYSTEM-c084fc?style=for-the-badge&logo=telegram&logoColor=white" alt="Voice2Deal Bot" />
+    <img src="https://img.shields.io/badge/🎙️_JASPER_VOICE_COPILOT-00f0ff?style=for-the-badge&logo=fastapi&logoColor=black" alt="Jasper AI" />
   </a>
   &nbsp;
   <a href="https://github.com/salomh46-rgb/uzpayment-sdk" target="_blank">
-    <img src="https://img.shields.io/badge/💳_UZPAYMENT_SDK-2dd4bf?style=for-the-badge&logo=python&logoColor=black" alt="UzPayment" />
+    <img src="https://img.shields.io/badge/💳_UZPAYMENT_FINTECH_SDK-2dd4bf?style=for-the-badge&logo=typescript&logoColor=black" alt="UzPayment" />
   </a>
   &nbsp;
-  <a href="https://github.com/salomh46-rgb/pulseapi-monitoring" target="_blank">
-    <img src="https://img.shields.io/badge/📊_PULSEAPI_SAAS-f43f5e?style=for-the-badge&logo=fastapi&logoColor=white" alt="PulseAPI" />
+  <a href="https://github.com/salomh46-rgb/collabflow-ai-canvas" target="_blank">
+    <img src="https://img.shields.io/badge/🎨_COLLABFLOW_AI_CANVAS-c084fc?style=for-the-badge&logo=react&logoColor=white" alt="CollabFlow" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/salomh46-rgb/pulseapi-monitoring-saas" target="_blank">
+    <img src="https://img.shields.io/badge/📊_PULSEAPI_AUTONOMOUS_SENTRY-f43f5e?style=for-the-badge&logo=python&logoColor=white" alt="PulseAPI" />
   </a>
 </div>
 
 ---
 
-### ⚡ QUANTUM TEXNOLOGIYALAR MATRITSASI (TECH ARSENAL)
+### ⚡ QUANTUM TECH STACK BENTO MATRIX
 
 <div align="center">
   <img src="assets/tech_matrix_bento.svg" width="100%" alt="Quantum Tech Matrix Bento Grid" />
@@ -81,24 +81,24 @@
 
 ---
 
-### 🌌 TIZIMLAR ME'MORI PROFILI (ENGINEERING IDENTITY & SPEC)
+### 🌌 SYSTEMS ARCHITECT IDENTITY & PRODUCTION CODE SPEC
 
 ```typescript
 interface SeniorArchitectIdentity {
   name: "Javohirbek Asqarov (Jasper)";
-  role: "Senior Full-Stack & Autonomous AI Systems Architect";
+  title: "Senior Full-Stack & Autonomous AI Systems Architect";
   coordinates: "Tashkent, Uzbekistan 🇺🇿 [41.2995° N, 69.2401° E]";
-  core_foundations: ["Python 3.14", "TypeScript", "Next.js 15", "FastAPI", "Docker", "PostgreSQL", "Redis"];
-  ai_specializations: ["Google Gemini Multimodal AI", "Neural Voice (TTS/STT)", "Autonomous Agentic Swarms"];
+  foundations: ["Python 3.12+", "TypeScript", "Next.js (App Router)", "FastAPI", "Docker", "PostgreSQL", "Redis"];
+  ai_specializations: ["Google Gemini Multimodal AI", "Neural Voice (TTS/STT)", "Autonomous Agentic Swarms", "RAG"];
   methodology: "Senior Architect 5-Step Discipline: Specs First ➔ Mutex Locks ➔ 100% Test Proof ➔ Zero Slop ➔ 1-Click DevOps";
-  mission: "Murakkab biznes va texnik infratuzilmalarni yuqori unumdorlikka ega AI tizimlari bilan to'liq avtomatlashtirish.";
-  current_focus: "⚡ Building autonomous SaaS ecosystems, multi-agent frameworks, and high-scale FinTech engines";
+  mission: "Architecting zero-downtime, scalable AI systems, enterprise microservices, and robust fintech infrastructure.";
+  current_focus: "⚡ Engineering autonomous developer-ops workflows, multi-agent frameworks, and global payment pipelines";
 }
 ```
 
 ---
 
-### 🐍 JONLI FAOLIYAT ILONI (CONTRIBUTION SNAKE)
+### 🐍 ACTIVE CONTRIBUTION GRAPH
 
 <div align="center">
   <picture>
@@ -110,15 +110,7 @@ interface SeniorArchitectIdentity {
 
 ---
 
-### 🎮 PACMAN DEV ARCADE (CONTRIBUTION GAME)
-
-<div align="center">
-  <img src="assets/pacman_game.svg" width="100%" alt="Pacman Contribution Game" />
-</div>
-
----
-
-### 📊 GITHUB JONLI ANALITIKA VA STATISTIKA (ANALYTICS DASHBOARD)
+### 📊 ENGINEERING METRICS & PRODUCTIVITY ANALYTICS
 
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=salomh46-rgb&theme=tokyonight" width="49%" alt="GitHub Stats" />
@@ -127,14 +119,6 @@ interface SeniorArchitectIdentity {
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=salomh46-rgb&theme=tokyonight&hide_border=true&border_radius=12" width="98%" alt="GitHub Streak" />
-</div>
-
----
-
-### 🏎️ FAOLIYAT MAGISTRALI (TURBO DRIFT HIGHWAY)
-
-<div align="center">
-  <img src="assets/contribution_drift_track.svg" width="100%" alt="GitHub Contribution Drift Highway" />
 </div>
 
 ---
