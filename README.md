@@ -33,6 +33,21 @@
   <img src="https://komarev.com/ghpvc/?username=salomh46-rgb&label=PROFILE+VIEWS&color=00f0ff&style=for-the-badge" alt="Profile Views" />
 </p>
 
+<!-- INTERACTIVE NAVIGATION HUD -->
+<p align="center">
+  <a href="#-featured-flagship-architectures"><img src="https://img.shields.io/badge/🚀_FLAGSHIPS-040714?style=flat-square&logo=starship&logoColor=00f0ff" alt="Flagships" /></a>
+  &nbsp;
+  <a href="#-daily-autonomous-ai-lab-live-pipeline-telemetry"><img src="https://img.shields.io/badge/🔬_AI_LAB_SENTINEL-040714?style=flat-square&logo=googlecloud&logoColor=38bdf8" alt="AI Lab" /></a>
+  &nbsp;
+  <a href="#-live-enterprise--production-deployments"><img src="https://img.shields.io/badge/🌐_LIVE_DEPLOYMENTS-040714?style=flat-square&logo=cloudflare&logoColor=2dd4bf" alt="Deployments" /></a>
+  &nbsp;
+  <a href="#-quantum-tech-stack-bento-matrix"><img src="https://img.shields.io/badge/⚡_TECH_MATRIX-040714?style=flat-square&logo=matrix&logoColor=c084fc" alt="Tech Matrix" /></a>
+  &nbsp;
+  <a href="#-systems-architect-identity--production-code-spec"><img src="https://img.shields.io/badge/🌌_ARCHITECT_SPEC-040714?style=flat-square&logo=typescript&logoColor=00f0ff" alt="Spec" /></a>
+  &nbsp;
+  <a href="#-engineering-metrics--productivity-analytics"><img src="https://img.shields.io/badge/📊_ANALYTICS-040714?style=flat-square&logo=github&logoColor=f43f5e" alt="Analytics" /></a>
+</p>
+
 </div>
 
 ---
@@ -58,16 +73,20 @@
     <img src="https://img.shields.io/badge/🎙️_JASPER_VOICE_COPILOT-00f0ff?style=for-the-badge&logo=fastapi&logoColor=black" alt="Jasper AI" />
   </a>
   &nbsp;
+  <a href="https://t.me/Ovozli_SavdoBOT" target="_blank">
+    <img src="https://img.shields.io/badge/🤖_VOICE2DEAL_AI_BOT-c084fc?style=for-the-badge&logo=telegram&logoColor=white" alt="Voice2Deal AI" />
+  </a>
+  &nbsp;
   <a href="https://github.com/salomh46-rgb/uzpayment-sdk" target="_blank">
     <img src="https://img.shields.io/badge/💳_UZPAYMENT_FINTECH_SDK-2dd4bf?style=for-the-badge&logo=typescript&logoColor=black" alt="UzPayment" />
   </a>
   &nbsp;
-  <a href="https://github.com/salomh46-rgb/collabflow-ai-canvas" target="_blank">
-    <img src="https://img.shields.io/badge/🎨_COLLABFLOW_AI_CANVAS-c084fc?style=for-the-badge&logo=react&logoColor=white" alt="CollabFlow" />
-  </a>
-  &nbsp;
   <a href="https://github.com/salomh46-rgb/pulseapi-monitoring-saas" target="_blank">
     <img src="https://img.shields.io/badge/📊_PULSEAPI_AUTONOMOUS_SENTRY-f43f5e?style=for-the-badge&logo=python&logoColor=white" alt="PulseAPI" />
+  </a>
+  &nbsp;
+  <a href="https://t.me/DentaMedKlinika_bot" target="_blank">
+    <img src="https://img.shields.io/badge/🏥_DENTAMED_HOSPITAL_CRM-38bdf8?style=for-the-badge&logo=medscape&logoColor=white" alt="DentaMed CRM" />
   </a>
 </div>
 
@@ -86,6 +105,17 @@
 | 🚀 **Day-265** | [`day_265_cryptographic_utility`](autonomous_lab/day_265_cryptographic_utility) | Cryptographic Password & Secret Shuffler with Entropy Scorer | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-264** | [`day_264_async_utility`](autonomous_lab/day_264_async_utility) | Async Multi-Channel Heartbeat Sentinel & SSL Expiry Checker utility | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 <!-- AUTONOMOUS_LAB_END -->
+
+---
+
+### 🌐 LIVE ENTERPRISE & PRODUCTION DEPLOYMENTS
+
+| System & Ecosystem | Architecture & Core Stack | Production Environment | Live Status | Verified SLA |
+| :--- | :--- | :--- | :---: | :---: |
+| 🏥 **DentaMed Hospital CRM** | FastAPI • React Glassmorphism • PostgreSQL Multi-Tenant | Cloud VPS • Docker Compose | [Demo: `@DentaMedKlinika_bot`](https://t.me/DentaMedKlinika_bot) | `99.98% Uptime` |
+| 🎙️ **Voice2Deal AI Commerce** | Google Gemini Multimodal • SQLite WAL • Aiogram 3 | Autonomous Cloud Container | [Live: `@Ovozli_SavdoBOT`](https://t.me/Ovozli_SavdoBOT) | `24/7 Active` |
+| 💳 **UzPayment FinTech SDK** | Payme • Click • Uzum • Zero-Latency Signature Engine | NPM & PyPI Package | [View SDK Core](https://github.com/salomh46-rgb/uzpayment-sdk) | `100% PCI-DSS Spec` |
+| ⚡ **Coolify Autonomous Cluster** | Hetzner Cloud • Traefik Reverse Proxy • Supabase | Dedicated VPS (`62.171.143.55`) | [Infrastructure Registry](https://github.com/salomh46-rgb) | `Zero Downtime` |
 
 ---
 
@@ -129,12 +159,14 @@ interface SeniorArchitectIdentity {
 ### 📊 ENGINEERING METRICS & PRODUCTIVITY ANALYTICS
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=salomh46-rgb&theme=tokyonight" width="49%" alt="GitHub Stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=salomh46-rgb&theme=tokyonight" width="49%" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=salomh46-rgb&show_icons=true&theme=radical&bg_color=040714&title_color=00f0ff&text_color=94a3b8&icon_color=00f0ff&border_color=00f0ff33&rank_icon=github" width="49%" alt="Jasper's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=salomh46-rgb&layout=compact&theme=radical&bg_color=040714&title_color=c084fc&text_color=94a3b8&border_color=c084fc33" width="49%" alt="Top Languages" />
 </div>
 
+<br/>
+
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=salomh46-rgb&theme=tokyonight&hide_border=true&border_radius=12" width="98%" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=salomh46-rgb&theme=dark&background=040714&border=00f0ff33&stroke=00f0ff&ring=00f0ff&fire=00f0ff&currStreakLabel=00f0ff" width="98%" alt="GitHub Streak" />
 </div>
 
 ---
