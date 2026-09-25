@@ -2,8 +2,8 @@ name: Daily Autonomous AI Lab 🚀
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Executes every 24 hours at 00:00 UTC
-  workflow_dispatch: # Allows manual trigger anytime from GitHub UI
+    - cron: '0 0 * * *' # Executes daily at 00:00 UTC
+  workflow_dispatch: # Allows manual trigger anytime from GitHub Actions UI
 
 jobs:
   build-and-deploy:
@@ -27,6 +27,7 @@ jobs:
       - name: Execute Daily Autonomous AI Builder
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PYTHONDONTWRITEBYTECODE: "1"
         run: |
           python .github/scripts/daily_builder.py
 
@@ -35,5 +36,6 @@ jobs:
           git config --global user.name "Jasper AI Autopilot"
           git config --global user.email "salomh46@gmail.com"
           git add .
-          git commit -m "feat(daily-ai-lab): autonomous daily open-source tool build & verified tests [skip ci]" || exit 0
+          BUILD_MSG=$(cat .github/scripts/latest_commit_msg.txt 2>/dev/null || echo "feat(ai-lab): autonomous daily open-source tool build & verified tests")
+          git commit -m "$BUILD_MSG [skip ci]" || exit 0
           git push origin main
