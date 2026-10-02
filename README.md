@@ -99,11 +99,11 @@
 
 | Cycle | Architecture Module | Functional Specification | Test Proof | Status |
 | :--- | :--- | :--- | :---: | :---: |
+| 🚀 **Day-275** | [`day_275_jwt_claims_decoder`](autonomous_lab/day_275_jwt_claims_decoder) | Lightweight Zero-Dependency JWT Claims Decoder | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-274** | [`day_274_exponential_backoff_retry`](autonomous_lab/day_274_exponential_backoff_retry) | Resilient Retry Engine with Full & Decorrelated Jitter | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-273** | [`day_273_circuit_breaker`](autonomous_lab/day_273_circuit_breaker) | Fault-Tolerant Circuit Breaker State Machine | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-272** | [`day_272_hmac_replay_sentinel`](autonomous_lab/day_272_hmac_replay_sentinel) | HMAC-SHA256 Webhook Verifier with Replay Protection | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-271** | [`day_271_lru_ttl_cache`](autonomous_lab/day_271_lru_ttl_cache) | Thread-Safe LRU Cache with Granular TTL Expiration | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
-| 🚀 **Day-270** | [`day_270_token_bucket_limiter`](autonomous_lab/day_270_token_bucket_limiter) | High-Throughput Token Bucket Rate Limiter | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 <!-- AUTONOMOUS_LAB_END -->
 
 ---
