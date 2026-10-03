@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/github/followers/salomh46-rgb?label=FOLLOWERS&style=for-the-badge&logo=github&color=05070e&logoColor=00f0ff" alt="Followers" />
   </a>
   &nbsp;
-  <a href="https://bestportfoliyo-o4z2.vercel.app/" target="_blank">
+  <a href="https://bestportfoliyo.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/🌐_3D_PORTFOLIO-0070F3?style=for-the-badge&logo=vercel&logoColor=white" alt="3D Portfolio" />
   </a>
   &nbsp;
