@@ -46,8 +46,8 @@
 
   <!-- Top Title Accent -->
   <g transform="translate(450, 22)">
-    <text x="0" y="0" fill="#00f0ff" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" letter-spacing="3" text-anchor="middle">
-      ⚡ QUANTUM TECH MATRIX // SENIOR ARCHITECTURE STACK ⚡
+    <text x="0" y="0" fill="#00f0ff" font-family="'Orbitron', -apple-system, sans-serif" font-size="10.5" font-weight="900" letter-spacing="2.5" text-anchor="middle">
+      ⚡ QUANTUM TECH MATRIX // FULL-CYCLE PRODUCT ARCHITECT STACK ⚡
     </text>
   </g>
 
