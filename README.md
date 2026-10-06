@@ -62,6 +62,15 @@
 
 ### 🚀 FEATURED FLAGSHIP ARCHITECTURES
 
+<!-- COSMIC QUIET LUXURY INTERACTIVE SHOWCASE -->
+<div align="center">
+  <a href="https://bestportfoliyo.vercel.app/" target="_blank">
+    <img src="assets/cosmic_luxury_showcase.svg" width="100%" alt="QuantumCore3D & Originkit Cosmic Quiet Luxury Showcase" />
+  </a>
+</div>
+
+<br/>
+
 <div align="center">
   <img src="assets/holographic_showcase.svg" width="100%" alt="Holographic Project Showcase Cards" />
 </div>

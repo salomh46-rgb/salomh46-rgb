@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="340">
+  <defs>
+    <!-- Deep Obsidian Matte Background -->
+    <radialGradient id="obsidianSpace" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#0c0e14"/>
+      <stop offset="60%" stop-color="#06070a"/>
+      <stop offset="100%" stop-color="#030406"/>
+    </radialGradient>
+
+    <!-- Champagne Gold Shimmer Beam -->
+    <linearGradient id="goldBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D77F"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA7C11"/>
+    </linearGradient>
+
+    <!-- Subtle Amber/Gold Atmospheric Glow -->
+    <radialGradient id="ambientGoldGlow" cx="25%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.14"/>
+      <stop offset="60%" stop-color="#D4AF37" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Platinum Cyan Ambient Glow -->
+    <radialGradient id="ambientCyanGlow" cx="80%" cy="70%" r="65%">
+      <stop offset="0%" stop-color="#00F0FF" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#00F0FF" stop-opacity="0.01"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="luxuryShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.95"/>
+    </filter>
+
+    <!-- Champagne Hairline Dash Pattern -->
+    <linearGradient id="hairlineGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#F5D77F" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @keyframes luxuryOrbit {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes goldPulse {
+      0%, 100% { opacity: 0.35; }
+      50% { opacity: 0.85; }
+    }
+    @keyframes streamFlow {
+      0% { stroke-dashoffset: 600; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .orbit-ring {
+      transform-origin: 730px 170px;
+      animation: luxuryOrbit 28s linear infinite;
+    }
+    .orbit-ring-reverse {
+      transform-origin: 730px 170px;
+      animation: luxuryOrbit 36s linear infinite reverse;
+    }
+    .pulse-glow {
+      animation: goldPulse 4s ease-in-out infinite;
+    }
+    .stream-beam {
+      stroke-dasharray: 80 180;
+      animation: streamFlow 7s linear infinite;
+    }
+  </style>
+
+  <!-- Deep Obsidian Container -->
+  <rect x="0" y="0" width="920" height="340" rx="24" fill="url(#obsidianSpace)" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.2" filter="url(#luxuryShadow)"/>
+
+  <!-- Champagne Ambient Reflections -->
+  <rect x="0" y="0" width="920" height="340" rx="24" fill="url(#ambientGoldGlow)"/>
+  <rect x="0" y="0" width="920" height="340" rx="24" fill="url(#ambientCyanGlow)"/>
+
+  <!-- Top Luxury Status Monolith Capsule -->
+  <g transform="translate(48, 42)">
+    <rect width="365" height="28" rx="14" fill="#ffffff" fill-opacity="0.03" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+    <circle cx="16" cy="14" r="4" fill="#10B981" class="pulse-glow"/>
+    <text x="30" y="18" fill="#ffffff" fill-opacity="0.85" font-family="'Space Grotesk', -apple-system, sans-serif" font-size="10.5" font-weight="600" letter-spacing="1.8">INTERACTIVE 3D WEBGL SHOWCASE</text>
+    <line x1="285" y1="8" x2="285" y2="20" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1"/>
+    <text x="296" y="18" fill="#D4AF37" font-family="'Space Mono', monospace" font-size="10" font-weight="700" letter-spacing="1.2">LIVE V2.6</text>
+  </g>
+
+  <!-- Title & Colossal Authority -->
+  <g transform="translate(48, 116)">
+    <text x="0" y="0" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="34" font-weight="800" letter-spacing="-0.03em">
+      QuantumCore3D <tspan fill="url(#goldBeam)">· Quiet Luxury</tspan>
+    </text>
+    <text x="0" y="32" fill="#ffffff" fill-opacity="0.5" font-family="-apple-system, sans-serif" font-size="13" font-weight="400" letter-spacing="0.2">
+      Originkit WebGL Gyroscopic Core • 3D Flip Card Architecture • 100k Gravitational Particle Sand
+    </text>
+  </g>
+
+  <!-- Feature Pillar Highlights (Luxury Pill Badges) -->
+  <g transform="translate(48, 192)">
+    <!-- Pill 1: WebGL Gyroscope -->
+    <g transform="translate(0, 0)">
+      <rect width="180" height="36" rx="10" fill="#ffffff" fill-opacity="0.02" stroke="#D4AF37" stroke-opacity="0.35" stroke-width="1"/>
+      <circle cx="18" cy="18" r="3" fill="#D4AF37"/>
+      <text x="30" y="22" fill="#FFEBB0" font-family="'Space Mono', monospace" font-size="11" font-weight="500">QuantumCore 3D</text>
+    </g>
+
+    <!-- Pill 2: 3D Flip Gallery -->
+    <g transform="translate(192, 0)">
+      <rect width="180" height="36" rx="10" fill="#ffffff" fill-opacity="0.02" stroke="#00F0FF" stroke-opacity="0.3" stroke-width="1"/>
+      <circle cx="18" cy="18" r="3" fill="#00F0FF"/>
+      <text x="30" y="22" fill="#E0F7FA" font-family="'Space Mono', monospace" font-size="11" font-weight="500">Flip Cards Engine</text>
+    </g>
+
+    <!-- Pill 3: Cursor Ring Field -->
+    <g transform="translate(384, 0)">
+      <rect width="175" height="36" rx="10" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-opacity="0.15" stroke-width="1"/>
+      <circle cx="18" cy="18" r="3" fill="#ffffff" fill-opacity="0.7"/>
+      <text x="30" y="22" fill="#ffffff" fill-opacity="0.8" font-family="'Space Mono', monospace" font-size="11" font-weight="500">Pointer Ring Field</text>
+    </g>
+  </g>
+
+  <!-- Luxury CTA Pill Button (Left Bottom) -->
+  <g transform="translate(48, 258)">
+    <rect width="250" height="44" rx="22" fill="#ffffff" fill-opacity="0.05" stroke="url(#goldBeam)" stroke-width="1.4"/>
+    <text x="32" y="27" fill="#FFEBB0" font-family="-apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="0.4">
+      LAUNCH LIVE DEMO
+    </text>
+    <!-- Arrow Glyph -->
+    <path d="M198 22 L206 22 M202 18 L206 22 L202 26" stroke="#D4AF37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Live URL Indicator -->
+  <text x="318" y="285" fill="#ffffff" fill-opacity="0.35" font-family="'Space Mono', monospace" font-size="11">
+    ↗ bestportfoliyo.vercel.app
+  </text>
+
+  <!-- RIGHT SIDE: 3D Gyroscopic Quantum Core Simulation -->
+  <g transform="translate(0, 0)">
+    <!-- Core Ambient Halo -->
+    <circle cx="730" cy="170" r="95" fill="none" stroke="#D4AF37" stroke-opacity="0.06" stroke-width="18"/>
+    <circle cx="730" cy="170" r="80" fill="none" stroke="#00F0FF" stroke-opacity="0.05" stroke-width="10"/>
+
+    <!-- Central Gyroscopic Core Sphere -->
+    <circle cx="730" cy="170" r="32" fill="#0e1322" stroke="url(#goldBeam)" stroke-width="2"/>
+    <circle cx="730" cy="170" r="16" fill="#D4AF37" fill-opacity="0.25" class="pulse-glow"/>
+    <circle cx="730" cy="170" r="6" fill="#FFEBB0"/>
+
+    <!-- Orbit Ring 1 (Gold Diagonal) -->
+    <g class="orbit-ring">
+      <ellipse cx="730" cy="170" rx="88" ry="34" fill="none" stroke="url(#goldBeam)" stroke-width="1.6" stroke-opacity="0.75" transform="rotate(-35 730 170)"/>
+      <circle cx="802" cy="128" r="4.5" fill="#FFEBB0" filter="url(#luxuryShadow)"/>
+    </g>
+
+    <!-- Orbit Ring 2 (Cyan Transverse) -->
+    <g class="orbit-ring-reverse">
+      <ellipse cx="730" cy="170" rx="92" ry="32" fill="none" stroke="#00F0FF" stroke-width="1.4" stroke-opacity="0.65" transform="rotate(50 730 170)"/>
+      <circle cx="658" cy="212" r="3.5" fill="#00F0FF"/>
+    </g>
+
+    <!-- Orbit Ring 3 (Platinum Vertical Stream) -->
+    <ellipse cx="730" cy="170" rx="98" ry="40" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="1" transform="rotate(82 730 170)"/>
+
+    <!-- Dynamic Stream Beam on Perimeter -->
+    <ellipse cx="730" cy="170" rx="108" ry="46" fill="none" stroke="url(#goldBeam)" stroke-width="1.8" class="stream-beam" transform="rotate(-15 730 170)"/>
+  </g>
+
+  <!-- Bottom Hairline Trim -->
+  <line x1="48" y1="339" x2="872" y2="339" stroke="url(#hairlineGold)" stroke-width="1"/>
+</svg>
