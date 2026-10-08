@@ -108,11 +108,11 @@
 
 | Cycle | Architecture Module | Functional Specification | Test Proof | Status |
 | :--- | :--- | :--- | :---: | :---: |
+| 🚀 **Day-281** | [`day_281_markdown_table_engine`](autonomous_lab/day_281_markdown_table_engine) | Dynamic Markdown & ASCII Table Engine | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-280** | [`day_280_data_schema_validator`](autonomous_lab/day_280_data_schema_validator) | Lightweight Zero-Dependency Schema Validator | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-279** | [`day_279_structured_json_logger`](autonomous_lab/day_279_structured_json_logger) | High-Throughput Structured JSON Logger | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-278** | [`day_278_telegram_markdown_sanitizer`](autonomous_lab/day_278_telegram_markdown_sanitizer) | Telegram MarkdownV2 & Entity Safe Sanitizer | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-277** | [`day_277_consistent_hash_ring`](autonomous_lab/day_277_consistent_hash_ring) | Consistent Hashing Ring with Virtual Nodes | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
-| 🚀 **Day-276** | [`day_276_probabilistic_bloom_filter`](autonomous_lab/day_276_probabilistic_bloom_filter) | Space-Efficient Probabilistic Bloom Filter | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 <!-- AUTONOMOUS_LAB_END -->
 
 ---
