@@ -108,11 +108,11 @@
 
 | Cycle | Architecture Module | Functional Specification | Test Proof | Status |
 | :--- | :--- | :--- | :---: | :---: |
+| 🚀 **Day-292** | [`day_292_consistent_hash_ring`](autonomous_lab/day_292_consistent_hash_ring) | Consistent Hashing Ring with Virtual Nodes | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-291** | [`day_291_probabilistic_bloom_filter`](autonomous_lab/day_291_probabilistic_bloom_filter) | Space-Efficient Probabilistic Bloom Filter | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-290** | [`day_290_jwt_claims_decoder`](autonomous_lab/day_290_jwt_claims_decoder) | Lightweight Zero-Dependency JWT Claims Decoder | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-289** | [`day_289_exponential_backoff_retry`](autonomous_lab/day_289_exponential_backoff_retry) | Resilient Retry Engine with Full & Decorrelated Jitter | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-288** | [`day_288_circuit_breaker`](autonomous_lab/day_288_circuit_breaker) | Fault-Tolerant Circuit Breaker State Machine | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
-| 🚀 **Day-287** | [`day_287_hmac_replay_sentinel`](autonomous_lab/day_287_hmac_replay_sentinel) | HMAC-SHA256 Webhook Verifier with Replay Protection | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 <!-- AUTONOMOUS_LAB_END -->
 
 ---
