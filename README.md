@@ -108,11 +108,11 @@
 
 | Cycle | Architecture Module | Functional Specification | Test Proof | Status |
 | :--- | :--- | :--- | :---: | :---: |
+| 🚀 **Day-308** | [`day_308_telegram_markdown_sanitizer`](autonomous_lab/day_308_telegram_markdown_sanitizer) | Telegram MarkdownV2 & Entity Safe Sanitizer | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-307** | [`day_307_consistent_hash_ring`](autonomous_lab/day_307_consistent_hash_ring) | Consistent Hashing Ring with Virtual Nodes | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-306** | [`day_306_probabilistic_bloom_filter`](autonomous_lab/day_306_probabilistic_bloom_filter) | Space-Efficient Probabilistic Bloom Filter | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-305** | [`day_305_jwt_claims_decoder`](autonomous_lab/day_305_jwt_claims_decoder) | Lightweight Zero-Dependency JWT Claims Decoder | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-304** | [`day_304_exponential_backoff_retry`](autonomous_lab/day_304_exponential_backoff_retry) | Resilient Retry Engine with Full & Decorrelated Jitter | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
-| 🚀 **Day-303** | [`day_303_circuit_breaker`](autonomous_lab/day_303_circuit_breaker) | Fault-Tolerant Circuit Breaker State Machine | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 <!-- AUTONOMOUS_LAB_END -->
 
 ---
