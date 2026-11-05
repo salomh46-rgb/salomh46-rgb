@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 300" width="100%" height="300">
+  <defs>
+    <!-- Deep Obsidian Radial Space -->
+    <radialGradient id="coreBg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0d111a"/>
+      <stop offset="55%" stop-color="#06080e"/>
+      <stop offset="100%" stop-color="#020305"/>
+    </radialGradient>
+
+    <!-- Core Plasma Gradients -->
+    <radialGradient id="quantumPlasma" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#00f0ff"/>
+      <stop offset="70%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="goldBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCEBA7"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#99700C"/>
+    </linearGradient>
+
+    <filter id="coreGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes spinClockwise {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes spinCounter {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes pulseCore {
+      0%, 100% { transform: scale(0.92); opacity: 0.8; }
+      50% { transform: scale(1.08); opacity: 1; }
+    }
+    @keyframes flowParticle {
+      0% { stroke-dashoffset: 300; }
+      100% { stroke-dashoffset: 0; }
+    }
+    .orbit-1 {
+      transform-origin: 460px 150px;
+      animation: spinClockwise 20s linear infinite;
+    }
+    .orbit-2 {
+      transform-origin: 460px 150px;
+      animation: spinCounter 28s linear infinite;
+    }
+    .orbit-3 {
+      transform-origin: 460px 150px;
+      animation: spinClockwise 40s linear infinite;
+    }
+    .plasma-core {
+      transform-origin: 460px 150px;
+      animation: pulseCore 3.5s ease-in-out infinite;
+    }
+    .data-stream {
+      stroke-dasharray: 20 80;
+      animation: flowParticle 4s linear infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="920" height="300" rx="20" fill="url(#coreBg)" stroke="#ffffff" stroke-opacity="0.08" stroke-width="1.2"/>
+
+  <!-- Left Telemetry Pillar -->
+  <g transform="translate(40, 60)">
+    <rect width="210" height="180" rx="14" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-opacity="0.06"/>
+    <text x="20" y="32" fill="#00f0ff" font-family="'Space Mono', monospace" font-size="11" font-weight="700">QUAD-01 // COGNITION</text>
+    <text x="20" y="58" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">CognitiveZip (.czip)</text>
+    <text x="20" y="78" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10.5">Non-Extraction Semantic Tree</text>
+    
+    <path d="M 20 95 L 190 95" stroke="#ffffff" stroke-opacity="0.08"/>
+    
+    <text x="20" y="120" fill="#00f0ff" font-family="'Space Mono', monospace" font-size="11" font-weight="700">QUAD-02 // NEURAL VOICE</text>
+    <text x="20" y="142" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">Voice2Deal AI Engine</text>
+    <text x="20" y="162" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10.5">Sub-50ms Voice Commerce</text>
+  </g>
+
+  <!-- Right Telemetry Pillar -->
+  <g transform="translate(670, 60)">
+    <rect width="210" height="180" rx="14" fill="#ffffff" fill-opacity="0.02" stroke="#ffffff" stroke-opacity="0.06"/>
+    <text x="20" y="32" fill="#c084fc" font-family="'Space Mono', monospace" font-size="11" font-weight="700">QUAD-03 // MULTI-TENANT</text>
+    <text x="20" y="58" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">DentaMed Hospital CRM</text>
+    <text x="20" y="78" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10.5">PostgreSQL Strict RLS Shield</text>
+    
+    <path d="M 20 95 L 190 95" stroke="#ffffff" stroke-opacity="0.08"/>
+    
+    <text x="20" y="120" fill="#10b981" font-family="'Space Mono', monospace" font-size="11" font-weight="700">QUAD-04 // SECURITY &amp; FINTECH</text>
+    <text x="20" y="142" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="600">UzPayment &amp; ThreatForge</text>
+    <text x="20" y="162" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10.5">PCI-DSS &amp; SAST Swarm Auditor</text>
+  </g>
+
+  <!-- Central Connecting Optical Lines -->
+  <path d="M 250 150 L 370 150" stroke="#00f0ff" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <path d="M 250 150 L 370 150" stroke="#00f0ff" stroke-width="2" class="data-stream"/>
+
+  <path d="M 550 150 L 670 150" stroke="#c084fc" stroke-opacity="0.3" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <path d="M 550 150 L 670 150" stroke="#c084fc" stroke-width="2" class="data-stream"/>
+
+  <!-- CENTRAL QUANTUM CORE -->
+  <g id="quantum-center">
+    <!-- Atmospheric Outer Halo -->
+    <circle cx="460" cy="150" r="95" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    
+    <!-- Outer Orbit 3 (Gold) -->
+    <ellipse cx="460" cy="150" rx="90" ry="32" fill="none" stroke="url(#goldBeam)" stroke-opacity="0.4" stroke-width="1" class="orbit-3"/>
+    <circle cx="550" cy="150" r="3" fill="#FFEBB0" class="orbit-3"/>
+
+    <!-- Middle Orbit 2 (Cyan) -->
+    <ellipse cx="460" cy="150" rx="72" ry="72" fill="none" stroke="#00f0ff" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="12 18" class="orbit-2"/>
+    <circle cx="460" cy="78" r="4" fill="#00f0ff" filter="url(#coreGlow)" class="orbit-2"/>
+
+    <!-- Inner Orbit 1 (Violet) -->
+    <ellipse cx="460" cy="150" rx="55" ry="24" fill="none" stroke="#c084fc" stroke-opacity="0.6" stroke-width="1.5" class="orbit-1"/>
+    <circle cx="410" cy="150" r="3.5" fill="#e879f9" class="orbit-1"/>
+
+    <!-- Plasma Core Sphere -->
+    <circle cx="460" cy="150" r="38" fill="url(#quantumPlasma)" filter="url(#coreGlow)" class="plasma-core"/>
+    <circle cx="460" cy="150" r="14" fill="#ffffff" filter="url(#coreGlow)"/>
+
+    <!-- Core Label Badge -->
+    <g transform="translate(415, 252)">
+      <rect width="90" height="22" rx="11" fill="#ffffff" fill-opacity="0.04" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="45" y="15" fill="#FFEBB0" font-family="'Space Mono', monospace" font-size="9" font-weight="700" letter-spacing="1" text-anchor="middle">JASPER CORE</text>
+    </g>
+  </g>
+</svg>
