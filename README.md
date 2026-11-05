@@ -7,7 +7,7 @@
 
 <!-- DYNAMIC TYPING TEXT -->
 <a href="https://github.com/salomh46-rgb">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=20&duration=2500&pause=1000&color=00F0FF&center=true&vCenter=true&width=860&lines=Full-Cycle+Product+Architect+%26+Autonomous+AI+Founder;End-to-End:+System+Design+%E2%9E%94+Code+%E2%9E%94+B2B+Growth+%E2%9E%94+Legal+Shield;Specialized+in+Gemini+Multimodal+%26+Realtime+Neural+Voice;Creator+of+Voice2Deal+AI+%26+DentaMed+Hospital+CRM;Author+of+UzPayment+Unified+FinTech+Engine" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=700&size=20&duration=2500&pause=1000&color=00F0FF&center=true&vCenter=true&width=860&lines=Full-Cycle+Product+Architect+%26+Autonomous+AI+Founder;End-to-End:+System+Design+%E2%9E%94+Code+%E2%9E%94+B2B+Growth+%E2%9E%94+Legal+Shield;Specialized+in+Gemini+Multimodal+%26+Sub-50ms+Neural+Voice;Creator+of+Voice2Deal+AI+%26+DentaMed+Hospital+CRM;Author+of+CognitiveZip+(.czip)+%26+UzPayment+FinTech+Monorepo;Pioneer+of+Autonomous+AI+Swarms+%26+Sol+Agentic+Engine" alt="Typing SVG" />
 </a>
 
 <br/><br/>
@@ -37,9 +37,11 @@
 <p align="center">
   <a href="#-featured-flagship-architectures"><img src="https://img.shields.io/badge/🚀_FLAGSHIPS-040714?style=flat-square&logo=starship&logoColor=00f0ff" alt="Flagships" /></a>
   &nbsp;
-  <a href="#-daily-autonomous-ai-lab-live-pipeline-telemetry"><img src="https://img.shields.io/badge/🔬_AI_LAB_SENTINEL-040714?style=flat-square&logo=googlecloud&logoColor=38bdf8" alt="AI Lab" /></a>
+  <a href="#-flagship-architectural-matrix"><img src="https://img.shields.io/badge/🏛️_CORE_MATRIX-040714?style=flat-square&logo=blueprint&logoColor=38bdf8" alt="Matrix" /></a>
   &nbsp;
   <a href="#-live-enterprise--production-deployments"><img src="https://img.shields.io/badge/🌐_LIVE_DEPLOYMENTS-040714?style=flat-square&logo=cloudflare&logoColor=2dd4bf" alt="Deployments" /></a>
+  &nbsp;
+  <a href="#-daily-autonomous-ai-lab-live-pipeline-telemetry"><img src="https://img.shields.io/badge/🔬_AI_LAB_SENTINEL-040714?style=flat-square&logo=googlecloud&logoColor=38bdf8" alt="AI Lab" /></a>
   &nbsp;
   <a href="#-quantum-tech-stack-bento-matrix"><img src="https://img.shields.io/badge/⚡_TECH_MATRIX-040714?style=flat-square&logo=matrix&logoColor=c084fc" alt="Tech Matrix" /></a>
   &nbsp;
@@ -78,26 +80,57 @@
 <br/>
 
 <div align="center">
-  <a href="https://github.com/salomh46-rgb/jasper-voice-copilot" target="_blank">
-    <img src="https://img.shields.io/badge/🎙️_JASPER_VOICE_COPILOT-00f0ff?style=for-the-badge&logo=fastapi&logoColor=black" alt="Jasper AI" />
-  </a>
-  &nbsp;
   <a href="https://t.me/Ovozli_SavdoBOT" target="_blank">
-    <img src="https://img.shields.io/badge/🤖_VOICE2DEAL_AI_BOT-c084fc?style=for-the-badge&logo=telegram&logoColor=white" alt="Voice2Deal AI" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/salomh46-rgb/uzpayment-sdk" target="_blank">
-    <img src="https://img.shields.io/badge/💳_UZPAYMENT_FINTECH_SDK-2dd4bf?style=for-the-badge&logo=typescript&logoColor=black" alt="UzPayment" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/salomh46-rgb/pulseapi-monitoring-saas" target="_blank">
-    <img src="https://img.shields.io/badge/📊_PULSEAPI_AUTONOMOUS_SENTRY-f43f5e?style=for-the-badge&logo=python&logoColor=white" alt="PulseAPI" />
+    <img src="https://img.shields.io/badge/🎙️_VOICE2DEAL_AI-00f0ff?style=for-the-badge&logo=telegram&logoColor=black" alt="Voice2Deal AI" />
   </a>
   &nbsp;
   <a href="https://t.me/DentaMedKlinika_bot" target="_blank">
     <img src="https://img.shields.io/badge/🏥_DENTAMED_HOSPITAL_CRM-38bdf8?style=for-the-badge&logo=medscape&logoColor=white" alt="DentaMed CRM" />
   </a>
+  &nbsp;
+  <a href="https://github.com/salomh46-rgb/CognitiveZip-.czip-" target="_blank">
+    <img src="https://img.shields.io/badge/🗜️_COGNITIVEZIP_(.CZIP)-a855f7?style=for-the-badge&logo=archive&logoColor=white" alt="CognitiveZip" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/salomh46-rgb/uzpayment-monorepo" target="_blank">
+    <img src="https://img.shields.io/badge/💳_UZPAYMENT_FINTECH-2dd4bf?style=for-the-badge&logo=typescript&logoColor=black" alt="UzPayment" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/salomh46-rgb/NSP-Protocol" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_NSP_SWARM_PROTOCOL-f59e0b?style=for-the-badge&logo=pypi&logoColor=black" alt="NSP Protocol" />
+  </a>
+  &nbsp;
+  <a href="https://github.com/salomh46-rgb/ThreatForge-AI" target="_blank">
+    <img src="https://img.shields.io/badge/🛡️_THREATFORGE_AI-ef4444?style=for-the-badge&logo=securityscorecard&logoColor=white" alt="ThreatForge AI" />
+  </a>
 </div>
+
+---
+
+### 🏛️ FLAGSHIP ARCHITECTURAL MATRIX
+
+| System & Repository | Architecture & Core Stack | Key Innovation & Production Capability | Verified Proof & Status |
+| :--- | :--- | :--- | :---: |
+| 🎙️ **[Voice2Deal AI](https://t.me/Ovozli_SavdoBOT)** | Google Gemini Multimodal • Fast Groq • SQLite WAL • Aiogram 3 | Real-time voice-to-cart transaction parsing, sub-50ms intent routing, and offline POS auto-reconciliation. | ![Active](https://img.shields.io/badge/Production-24%2F7_Active-00f0ff?style=flat-square) |
+| 🏥 **[DentaMed Hospital CRM](https://t.me/DentaMedKlinika_bot)** | FastAPI • React Glassmorphism • PostgreSQL RLS • Docker | Zero cross-tenant data leakage, dynamic doctor schedules, automated SMS alerts (Eskiz.uz), and patient retention pipelines. | ![Live](https://img.shields.io/badge/SLA-99.98%25_Uptime-38bdf8?style=flat-square) |
+| 🗜️ **[CognitiveZip (.czip)](https://github.com/salomh46-rgb/CognitiveZip-.czip-)** | Python 3.11 • Semantic Tree Sitter • Zero-Extraction Query | World's 1st non-extraction semantic AI codebase archiver. Queries massive codebases in sub-milliseconds without extraction. | ![Passed](https://img.shields.io/badge/pytest-100%25_passed-brightgreen?style=flat-square) |
+| 💳 **[UzPayment Monorepo](https://github.com/salomh46-rgb/uzpayment-monorepo)** | TypeScript • Python • Click • Payme • Uzum Bank • Paynet | Universal fintech engine with 100x tiyin/so'm conversion guards, idempotency mutex locks, and webhook HMAC verification. | ![PCI-DSS](https://img.shields.io/badge/Fintech-PCI--DSS_Spec-2dd4bf?style=flat-square) |
+| 🌐 **[NSP-Protocol](https://github.com/salomh46-rgb/NSP-Protocol)** | Rust & Python • Symbolic Logic • Non-Autoregressive | High-density glass-box symbolic communication protocol for autonomous AI swarms, slashing token overhead by 80%. | ![Verified](https://img.shields.io/badge/Swarm-Symbolic_Valid-f59e0b?style=flat-square) |
+| 🛡️ **[ThreatForge-AI](https://github.com/salomh46-rgb/ThreatForge-AI)** | Autonomous Multi-Agent • AST & Semgrep SAST • Gemini Engine | Proactive AppSec & cybersecurity swarm detecting OWASP vulnerabilities, secret leaks, and logic flaws before merge. | ![Audit](https://img.shields.io/badge/Security-A%2B_Audited-ef4444?style=flat-square) |
+| 📊 **[PulseAPI Sentry](https://github.com/salomh46-rgb/pulseapi-monitoring-saas)** | FastAPI • ClickHouse / PostgreSQL • Redis Sentinel | Autonomous distributed uptime sentinel, synthetic health checker, and SLA tracking with sub-second alerting. | ![Uptime](https://img.shields.io/badge/Health-Sentinel_Active-f43f5e?style=flat-square) |
+| ⚙️ **[CAD Kinetic 3D](https://github.com/salomh46-rgb/cad-kinetic-engine)** | Three.js • WebGPU / WebGL • Physics Simulation | Ultra-responsive 3D kinematic engine and architectural mesh visualizer running at constant 60 FPS in browser. | ![WebGL](https://img.shields.io/badge/Engine-60_FPS_Constant-a855f7?style=flat-square) |
+
+---
+
+### 🌐 LIVE ENTERPRISE & PRODUCTION DEPLOYMENTS
+
+| Infrastructure Tier | Engine & Orchestration | Node / Endpoint | Live Telemetry | Production Guard |
+| :--- | :--- | :--- | :---: | :---: |
+| ⚡ **Dedicated Cloud VPS** | Hetzner Cloud • Coolify v4.3.21 Orchestrator | `62.171.143.55` (Ubuntu 24.04 LTS) | `Zero Downtime` | UFW Hardened • Fail2Ban |
+| 🛡️ **Edge SSL Proxy** | Traefik Reverse Proxy • Let's Encrypt Wildcard | Global Edge Anycast | `A+ SSL Labs` | Automated Certbot Renewal |
+| 🗄️ **Database Cluster** | Supabase • PostgreSQL 16 with Row Level Security | Multi-Tenant Isolated Pool | `100% RLS Coverage` | PgBouncer Pool Hygiene |
+| 🤖 **Telegram Edge Bots** | Aiogram 3 • Webhook HMAC • AsyncIO Mutex | `@Ovozli_SavdoBOT` & `@DentaMedKlinika_bot` | `Sub-200ms Latency` | Idempotent Concurrency Lock |
+| 🌐 **Cosmic Portfolio** | Next.js 15 App Router • Three.js • Tailwind v4 | [`bestportfoliyo.vercel.app`](https://bestportfoliyo.vercel.app/) | `Global CDN Hit 99%` | Cosmic Quiet Luxury UX |
 
 ---
 
@@ -117,17 +150,6 @@
 
 ---
 
-### 🌐 LIVE ENTERPRISE & PRODUCTION DEPLOYMENTS
-
-| System & Ecosystem | Architecture & Core Stack | Production Environment | Live Status | Verified SLA |
-| :--- | :--- | :--- | :---: | :---: |
-| 🏥 **DentaMed Hospital CRM** | FastAPI • React Glassmorphism • PostgreSQL Multi-Tenant | Cloud VPS • Docker Compose | [Demo: `@DentaMedKlinika_bot`](https://t.me/DentaMedKlinika_bot) | `99.98% Uptime` |
-| 🎙️ **Voice2Deal AI Commerce** | Google Gemini Multimodal • SQLite WAL • Aiogram 3 | Autonomous Cloud Container | [Live: `@Ovozli_SavdoBOT`](https://t.me/Ovozli_SavdoBOT) | `24/7 Active` |
-| 💳 **UzPayment FinTech SDK** | Payme • Click • Uzum • Zero-Latency Signature Engine | NPM & PyPI Package | [View SDK Core](https://github.com/salomh46-rgb/uzpayment-sdk) | `100% PCI-DSS Spec` |
-| ⚡ **Coolify Autonomous Cluster** | Hetzner Cloud • Traefik Reverse Proxy • Supabase | Dedicated VPS (`62.171.143.55`) | [Infrastructure Registry](https://github.com/salomh46-rgb) | `Zero Downtime` |
-
----
-
 ### ⚡ QUANTUM TECH STACK BENTO MATRIX
 
 <div align="center">
@@ -144,14 +166,34 @@ interface FullCycleProductArchitect {
   role: "Full-Cycle Product Architect & AI Systems Founder";
   coordinates: "Tashkent, Uzbekistan 🇺🇿 [41.2995° N, 69.2401° E]";
   four_quadrants: {
-    engineering: ["FastAPI", "Next.js 15", "PostgreSQL (RLS)", "Redis", "Docker", "PgBouncer", "Temporal.io"],
-    frontend_motion: ["2026 Elite UI", "Tailwind v4", "shadcn/ui", "GSAP ScrollTrigger", "Three.js"],
-    b2b_growth: ["B2B Cold Outreach", "Merchant Acquisition", "ROI-Driven Commercial Proposals", "Omnichannel"],
-    legal_protection: ["Software Legal Shield", "Liability Waivers (AS IS)", "QMQ/ShNQ Articles 37-38"]
+    engineering: [
+      "FastAPI", "Python 3.11+", "Next.js 15 (App Router)", "TypeScript", 
+      "PostgreSQL (Strict RLS)", "Supabase", "Redis Sentinel", "Docker", "PgBouncer", "Temporal.io"
+    ];
+    frontend_motion: [
+      "Cosmic Quiet Luxury (#050608)", "Tailwind CSS v4", "shadcn/ui", 
+      "GSAP ScrollTrigger", "Three.js / WebGL", "2026 Elite UI Engine"
+    ];
+    b2b_growth: [
+      "Autonomous B2B Outreach", "Voice-to-Commerce Conversion", 
+      "Merchant Acquisition", "ROI-Driven Commercial Proposals", "Omnichannel Lead Funnels"
+    ];
+    legal_protection: [
+      "Software Legal Shield", "Liability Waivers (AS IS)", 
+      "QMQ/ShNQ Construction Auditing", "Civil Code Risk Mitigation"
+    ];
   };
-  methodology: "Full-Cycle Discipline: Specs First ➔ Mutex Locks ➔ 100% Test Proof ➔ Anti-Slop ➔ Legal Shield ➔ 1-Click DevOps";
-  mission: "Bridging deep software engineering with high-ticket commercial execution, legal protection, and autonomous AI swarms.";
-  flagships: ["Voice2Deal AI (@Ovozli_SavdoBOT)", "DentaMed Hospital CRM", "UzPayment FinTech SDK", "Coolify Cluster"];
+  methodology: "5-Step Full-Cycle Discipline: Purpose & MVP Gate ➔ Architecture & Edge Defense ➔ Surgical Code ➔ Doubt-Driven Verification ➔ 1-Click DevOps";
+  mission: "Bridging mission-critical software engineering with high-ticket commercial execution, legal protection, and autonomous AI swarms.";
+  flagships: [
+    "Voice2Deal AI (@Ovozli_SavdoBOT)", 
+    "DentaMed Hospital CRM (@DentaMedKlinika_bot)", 
+    "CognitiveZip (.czip) Semantic Archiver", 
+    "UzPayment FinTech Monorepo", 
+    "NSP-Protocol Symbolic Swarms",
+    "ThreatForge AI SAST Sentinel",
+    "Coolify Dedicated Cluster (62.171.143.55)"
+  ];
 }
 ```
 
