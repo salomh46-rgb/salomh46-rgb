@@ -173,11 +173,11 @@ I design, engineer, and deploy high-concurrency digital platforms, mission-criti
 
 | Cycle | Architecture Module | Functional Specification | Test Proof | Status |
 | :--- | :--- | :--- | :---: | :---: |
+| 🚀 **Day-313** | [`day_313_priority_task_queue`](autonomous_lab/day_313_priority_task_queue) | Priority Task Queue with Starvation Defense | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-312** | [`day_312_shannon_entropy_analyzer`](autonomous_lab/day_312_shannon_entropy_analyzer) | Shannon Entropy Secret & Token Strength Analyzer | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-311** | [`day_311_markdown_table_engine`](autonomous_lab/day_311_markdown_table_engine) | Dynamic Markdown & ASCII Table Engine | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-310** | [`day_310_data_schema_validator`](autonomous_lab/day_310_data_schema_validator) | Lightweight Zero-Dependency Schema Validator | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 | 🚀 **Day-309** | [`day_309_structured_json_logger`](autonomous_lab/day_309_structured_json_logger) | High-Throughput Structured JSON Logger | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
-| 🚀 **Day-308** | [`day_308_telegram_markdown_sanitizer`](autonomous_lab/day_308_telegram_markdown_sanitizer) | Telegram MarkdownV2 & Entity Safe Sanitizer | `100% Passed` | ![Passed](https://img.shields.io/badge/pytest-passing-brightgreen?style=flat-square) |
 <!-- AUTONOMOUS_LAB_END -->
 
 ---
